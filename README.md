@@ -15,7 +15,7 @@ El repositorio cubre los puntos 1 a 4 del enunciado.
 
 1. **Entendimiento y preparación de los datos.** Diagnóstico de calidad (faltantes, duplicados, categorías inconsistentes y valores imposibles), limpieza documentada y análisis exploratorio univariado y bivariado.
 2. **Entrenamiento de modelos.** Regresión logística, Random Forest y Gradient Boosting, cada uno con y sin variables derivadas, usando una división estratificada 60/20/20 y búsqueda de hiperparámetros con validación cruzada.
-3. **Análisis cuantitativo.** Métricas en el conjunto de prueba, intervalos de confianza por bootstrapping y pruebas estadísticas pareadas (A/B por bootstrapping, prueba t pareada y McNemar) para justificar la elección del modelo.
+3. **Análisis cuantitativo.** Métricas en el conjunto de prueba, intervalos de confianza por bootstrapping y pruebas estadísticas pareadas (A/B por bootstrapping y McNemar) para justificar la elección del modelo.
 4. **Análisis cualitativo.** Interpretación global y de predicciones individuales con gráficos ICE y PDP, valores SHAP y LIME, y comparación entre los modelos.
 
 ## Principales hallazgos

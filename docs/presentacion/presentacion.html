@@ -208,17 +208,13 @@ svg text{font-family:var(--font)}
 .instant,.instant *{transition:none!important;animation:none!important}
 @media (prefers-reduced-motion:reduce){.rv,.draw,.node,.grow,.growx,.fadein,.meter i{transition:none!important}.slide.enter .ent{animation:none}}
 
-/* ===== Contador, progreso, notas y ayuda ===== */
+/* ===== Contador, progreso y ayuda ===== */
 #cnt{position:absolute;right:120px;bottom:42px;font-size:14px;color:#7A8798;font-variant-numeric:tabular-nums;z-index:20}
 #cnt b{color:var(--acc);font-weight:500}
 #bar{position:absolute;left:0;bottom:0;height:3px;background:var(--acc2);transition:width .16s ease;z-index:20}
 #deck.dark #cnt{color:rgba(255,255,255,.6)}
 #deck.dark #cnt b{color:#fff}
 #deck.dark #bar{background:rgba(255,255,255,.85)}
-#notes{position:fixed;left:24px;right:24px;bottom:24px;max-width:900px;margin:0 auto;background:rgba(6,16,53,.96);color:#E5EAF7;
-  border:1px solid rgba(147,170,252,.35);border-radius:12px;padding:18px 22px;font:15px/1.5 var(--font);z-index:100;display:none}
-#notes.show{display:block}
-#notes b{color:var(--sky);font-weight:600;display:block;margin-bottom:6px}
 #help{position:fixed;bottom:15px;left:18px;color:#fff;background:#061035db;border:1px solid #ffffff30;border-radius:7px;
   padding:8px 12px;font:12px var(--font);opacity:0;pointer-events:none;transition:opacity .4s;z-index:60}
 body.show-help #help{opacity:1}
@@ -237,7 +233,7 @@ body.show-help #help{opacity:1}
   .pg{display:block;position:absolute;right:120px;bottom:42px;font-size:14px;color:#7A8798;font-variant-numeric:tabular-nums}
   .pg b{color:var(--acc);font-weight:500}
   .D .pg,.B .pg{color:rgba(255,255,255,.6)} .D .pg b,.B .pg b{color:#fff}
-  #cnt,#bar,#notes,#help{display:none!important}
+  #cnt,#bar,#help{display:none!important}
 }
 
 /* ===== Logo de la universidad ===== */
@@ -296,18 +292,16 @@ body.show-help #help{opacity:1}
 .cl-card .row{display:grid;grid-template-columns:215px 1fr;gap:20px;align-items:center;padding:20px 0;border-bottom:1px solid rgba(255,255,255,.18)}
 .cl-card .row b{font-size:38px;font-weight:500;letter-spacing:-.02em;color:#fff;white-space:nowrap;font-variant-numeric:tabular-nums}
 .cl-card .row span{font-size:18px;line-height:1.4;color:rgba(255,255,255,.85)}
-.cl-card .nextstep{display:flex;gap:16px;align-items:flex-start;margin-top:24px;font-size:18px;line-height:1.45;color:rgba(255,255,255,.9)}
-.cl-card .nextstep .ic{width:28px;height:28px;color:#fff;flex:none;margin-top:1px}
-.cl-card .nextstep b{font-weight:600;color:#fff}
+.cl-card .row:last-child{border-bottom:0;padding-bottom:0}
 @media print{.dots *{animation:none!important}}
 
 </style>
 </head>
 <body>
-<div id="help">Avanza con <kbd>→</kbd> · notas <kbd>N</kbd> · pantalla completa <kbd>F</kbd> · ayuda <kbd>?</kbd></div>
+<div id="help">Avanza con <kbd>→</kbd> · pantalla completa <kbd>F</kbd> · ayuda <kbd>?</kbd></div>
 <div id="viewport"><div id="deck">
 
-<section class="slide B" data-notes="Presentamos el punto 6 del taller: los hallazgos del modelo de churn y cuánto vale usarlo. Somos Lina Muñoz y Yair Andrade. La idea central cabe en el título: el modelo sirve para decidir a quién ofrecerle una campaña de retención, y para un banco promedio eso vale unos COP 380 millones al año. La figura lo resume: de cada 100 clientes de un banco, 15 se van cada año; con el modelo, el banco retiene a casi 4 de ellos. Puente: «Empecemos por qué importa retener clientes».">
+<section class="slide B">
   <div class="lockup ent"><i class="ulogo" role="img" aria-label="Universidad de los Andes"></i><span class="sep"></span><div class="dep"><b>Ingeniería de Sistemas y Computación</b><br>Escuela de Posgrado</div></div>
   <div class="cv-txt">
     <span class="bey ent">MINE-4101 · Ciencia de Datos Aplicada · Taller 2</span>
@@ -323,7 +317,7 @@ body.show-help #help{opacity:1}
     </figcaption>
   </figure>
 </section>
-<section class="slide D" data-notes="Primera parte: por qué importa el abandono y qué nos dicen los datos.">
+<section class="slide D">
   <div class="brand" role="img" aria-label="Universidad de los Andes"><i class="ulogo"></i></div>
   <div class="btxt">
     <span class="bey ent">Sección 1 de 4</span>
@@ -331,7 +325,7 @@ body.show-help #help{opacity:1}
   </div>
   <div class="pg"><b>1</b> / 15</div>
 </section>
-<section class="slide L" data-notes="Casi todos los adultos en Colombia ya tienen un producto financiero, así que los bancos ya no crecen tanto captando clientes nuevos como evitando perder los que tienen. En un banco promedio de 20.000 clientes con 15% de churn, se van 3.000 clientes al año. Cada uno vale unos COP 0,91 millones en margen durante su vida en el banco, así que se pierden cerca de COP 2.700 millones en valor cada año. Clic 1: aparecen las fuentes. Puente: «Para atacar esto, construimos un modelo con datos de clientes reales».">
+<section class="slide L">
   <div class="brand" role="img" aria-label="Universidad de los Andes"><i class="ulogo"></i></div>
   <div class="pad">
     <div class="kicker ent">01 · El problema y los datos</div>
@@ -362,7 +356,7 @@ body.show-help #help{opacity:1}
   </div>
   <div class="pg"><b>2</b> / 15</div>
 </section>
-<section class="slide L" data-notes="Así lo hicimos, en cuatro pasos. Partimos de una muestra de 10.000 clientes de un banco europeo, de los cuales el 20,4% se fue. La limpiamos: quitamos 45 filas duplicadas y corregimos faltantes, categorías mal escritas y valores imposibles. Comparamos cuatro candidatos de tres algoritmos con una división 60/20/20 y elegimos con pruebas estadísticas. Por último, llevamos los aciertos del modelo a un banco colombiano de 20.000 clientes con 15% de churn, con supuestos de costos e ingresos que tienen fuente. Puente: «¿Qué encontramos en los datos?».">
+<section class="slide L">
   <div class="brand" role="img" aria-label="Universidad de los Andes"><i class="ulogo"></i></div>
   <div class="pad">
     <div class="kicker ent">01 · El problema y los datos</div>
@@ -387,7 +381,7 @@ body.show-help #help{opacity:1}
   </div>
   <div class="pg"><b>3</b> / 15</div>
 </section>
-<section class="slide L" data-notes="Estos son los patrones más claros de los datos. A la izquierda, el abandono por edad: sube con la edad hasta 56% entre los 51 y 60 años, casi tres veces el promedio de 20,4%, y luego baja. A la derecha, por número de productos: quienes tienen dos productos casi no se van (7,6%), quienes tienen uno se van más (27,7%) y quienes tienen tres o cuatro se van casi todos, aunque son pocos clientes. Clic 1: tres hallazgos más. Los inactivos se van casi el doble que los activos; en Alemania el abandono duplica al de Francia y España; y, según el modelo, la combinación más riesgosa es tener entre 55 y 65 años y estar inactivo: le asigna un riesgo cercano a 0,86. También hay diferencia por género (25,1% en mujeres frente a 16,5% en hombres), pero no recomendamos usarla para decidir ofertas. Puente: «El modelo aprende estos patrones y los combina».">
+<section class="slide L">
   <div class="brand" role="img" aria-label="Universidad de los Andes"><i class="ulogo"></i></div>
   <div class="pad">
     <div class="kicker ent">01 · El problema y los datos</div>
@@ -405,7 +399,7 @@ body.show-help #help{opacity:1}
   <div class="foot rv" data-step="0" style="--d:.6s">Muestra de 10.000 clientes. La línea punteada es la tasa promedio de abandono, 20,4%.</div>
   <div class="pg"><b>4</b> / 15</div>
 </section>
-<section class="slide D" data-notes="Segunda parte: qué tan bien predice el modelo y en qué se fija.">
+<section class="slide D">
   <div class="brand" role="img" aria-label="Universidad de los Andes"><i class="ulogo"></i></div>
   <div class="btxt">
     <span class="bey ent">Sección 2 de 4</span>
@@ -413,7 +407,7 @@ body.show-help #help{opacity:1}
   </div>
   <div class="pg"><b>5</b> / 15</div>
 </section>
-<section class="slide L" data-notes="Comparamos cuatro candidatos de tres algoritmos y elegimos el Random Forest. En 2.000 clientes que el modelo nunca vio, encuentra al 60% de los que se van (recall) y, cuando alerta, acierta el 68% de las veces (precisión). Su ROC-AUC de 0,87 dice que ordena bien a los clientes del más al menos riesgoso; el Gradient Boosting ordena igual de bien, y en dinero los dos resultan equivalentes. Clic 1: la nota de método. Ojo: en el banco, con 15% de churn y el umbral de 0,30, la precisión baja a 34%; 1 de cada 3 contactados se iba a ir, y aun así es rentable. Puente: «¿En qué se fija el modelo para decidir?».">
+<section class="slide L">
   <div class="brand" role="img" aria-label="Universidad de los Andes"><i class="ulogo"></i></div>
   <div class="pad">
     <div class="kicker ent">02 · El modelo</div>
@@ -442,7 +436,7 @@ body.show-help #help{opacity:1}
   <div class="foot rv" data-step="1">2.000 clientes de prueba con 20% de churn y umbral de 0,5. F1 de 0,637. En el banco, con 15% de churn y el umbral de 0,30, la precisión es de 34%.</div>
   <div class="pg"><b>6</b> / 15</div>
 </section>
-<section class="slide L" data-notes="Con los valores SHAP medimos cuánto pesa cada variable en las decisiones del modelo. La edad y el número de productos explican más de la mitad (53%). Le sigue si el cliente es activo. El modelo aprendió lo mismo que vimos en los datos, lo que nos da confianza en que no se apoya en ruido. Clic 1: cómo usarlo en el negocio. Puente: «Ahora, lo que le importa al banco: ¿cuánto dinero deja?».">
+<section class="slide L">
   <div class="brand" role="img" aria-label="Universidad de los Andes"><i class="ulogo"></i></div>
   <div class="pad">
     <div class="kicker ent">02 · El modelo</div>
@@ -458,7 +452,7 @@ body.show-help #help{opacity:1}
   </div>
   <div class="pg"><b>7</b> / 15</div>
 </section>
-<section class="slide D" data-notes="Tercera parte: cuánto dinero deja el modelo, cuándo se paga y qué tan seguro es.">
+<section class="slide D">
   <div class="brand" role="img" aria-label="Universidad de los Andes"><i class="ulogo"></i></div>
   <div class="btxt">
     <span class="bey ent">Sección 3 de 4</span>
@@ -466,7 +460,7 @@ body.show-help #help{opacity:1}
   </div>
   <div class="pg"><b>8</b> / 15</div>
 </section>
-<section class="slide L" data-notes="Llevamos el modelo a un banco de 20.000 clientes. Supuestos: la oferta convence al 30% de los que se iban a ir, cada contacto cuesta COP 40.000 entre canal e incentivo, y un cliente retenido vale COP 0,91 millones. Sin campaña la ganancia es cero. Contactar a todos casi no deja nada, porque se paga el contacto de 17.000 clientes que no se iban a ir. Con el modelo y el umbral de 0,5 que usamos al entrenar, la ganancia es de 365 millones. Bajando el umbral a 0,30, el banco contacta a más clientes en riesgo y gana 380 millones al año, aunque la diferencia con 0,5 no es concluyente. Clic 1: lo que eso significa en clientes. Puente: «¿Y cuánto tarda en pagarse el modelo?».">
+<section class="slide L">
   <div class="brand" role="img" aria-label="Universidad de los Andes"><i class="ulogo"></i></div>
   <div class="pad">
     <div class="kicker ent">03 · El valor para el banco</div>
@@ -483,7 +477,7 @@ body.show-help #help{opacity:1}
   <div class="foot rv" data-step="1">Conjunto de prueba. Intervalo de 95%: COP 349-410 M al año. Ganancia de la campaña, antes de los costos del modelo. La diferencia entre 0,30 y 0,5 no es concluyente.</div>
   <div class="pg"><b>9</b> / 15</div>
 </section>
-<section class="slide L" data-notes="Ahora restamos lo que cuesta el modelo: COP 130 millones de implementación durante 6 meses, y COP 50 millones al año de operación. Hay dos formas de verlo. En valor económico, cada cliente retenido cuenta todo el margen que dejará en el banco, y la inversión se recupera en el mes 11; a 3 años, el VPN es de COP 508 millones. En caja, ese margen entra poco a poco durante varios años, mientras los contactos se pagan de inmediato: la caja toca fondo en unos COP 460 millones negativos y el dinero vuelve en el mes 67. Clic 1: las tres cifras clave. Puente: «Pero todo esto depende de supuestos. ¿Qué pasa si fallan?».">
+<section class="slide L">
   <div class="brand" role="img" aria-label="Universidad de los Andes"><i class="ulogo"></i></div>
   <div class="pad">
     <div class="kicker ent">03 · El valor para el banco</div>
@@ -501,7 +495,7 @@ body.show-help #help{opacity:1}
   </div>
   <div class="pg"><b>10</b> / 15</div>
 </section>
-<section class="slide L" data-notes="Probamos qué tan sensible es el resultado. El gráfico mueve un supuesto a la vez entre su valor bajo y alto: en rojo, el valor que empeora el VPN; en azul, el que lo mejora. Lo que más pesa es la efectividad de la oferta: si solo convence al 15%, el VPN cae casi a cero. Le sigue el costo por contacto. Los costos del modelo pesan mucho menos. Clic 1: al mover todos los supuestos a la vez en 10.000 simulaciones, el VPN es positivo en el 86%, y el modelo supera a la mejor opción sin modelo en el 76%. El VPN sigue positivo mientras el banco tenga más de unos 6.000 clientes, el contacto cueste menos de COP 135.000 y la oferta convenza a más del 15%. Puente: «Por eso nuestra recomendación empieza por medir la oferta».">
+<section class="slide L">
   <div class="brand" role="img" aria-label="Universidad de los Andes"><i class="ulogo"></i></div>
   <div class="pad">
     <div class="kicker ent">03 · El valor para el banco</div>
@@ -527,7 +521,7 @@ body.show-help #help{opacity:1}
   </div>
   <div class="pg"><b>11</b> / 15</div>
 </section>
-<section class="slide D" data-notes="Última parte: qué hacer con estos resultados y qué no resuelve el análisis.">
+<section class="slide D">
   <div class="brand" role="img" aria-label="Universidad de los Andes"><i class="ulogo"></i></div>
   <div class="btxt">
     <span class="bey ent">Sección 4 de 4</span>
@@ -535,7 +529,7 @@ body.show-help #help{opacity:1}
   </div>
   <div class="pg"><b>12</b> / 15</div>
 </section>
-<section class="slide L" data-notes="Nuestra recomendación tiene tres pasos, en este orden. Primero, un piloto con grupo de control: a una parte de los clientes señalados se les hace la oferta y a otra no, para medir cuántos convence de verdad. Es el supuesto que más pesa. Segundo, reentrenar y validar el modelo con datos del banco colombiano, porque aprendió de clientes europeos. Tercero, escalar contactando a quienes superen 0,30 de probabilidad, y recalcular ese umbral si cambian los costos o la oferta. Clic 1: la regla de decisión. Puente: «Antes de cerrar, lo que este análisis no resuelve».">
+<section class="slide L">
   <div class="brand" role="img" aria-label="Universidad de los Andes"><i class="ulogo"></i></div>
   <div class="pad">
     <div class="kicker ent">04 · Qué recomendamos</div>
@@ -558,7 +552,7 @@ body.show-help #help{opacity:1}
   </div>
   <div class="pg"><b>13</b> / 15</div>
 </section>
-<section class="slide L" data-notes="Cuatro limitaciones que hay que tener presentes. Uno: los datos son europeos, y los clientes colombianos pueden comportarse distinto. Dos: el modelo predice quién se va, no a quién convence la oferta; los clientes más riesgosos no siempre son los más persuadibles. Tres: la tasa de churn de 15% y varios costos tienen fuentes débiles o son supuestos propios; por eso hicimos el análisis de sensibilidad. Cuatro: el banco necesita autorización para usar los datos (Ley 1581 de 2012), debe respetar los horarios de contacto de la Ley 2300 de 2023, y el modelo usa género y edad, así que hay que auditar que la campaña sea equitativa. Clic 1: las dos últimas. Puente: «Gracias».">
+<section class="slide L">
   <div class="brand" role="img" aria-label="Universidad de los Andes"><i class="ulogo"></i></div>
   <div class="pad">
     <div class="kicker ent">04 · Qué recomendamos</div>
@@ -576,10 +570,9 @@ body.show-help #help{opacity:1}
   </div>
   <div class="pg"><b>14</b> / 15</div>
 </section>
-<section class="slide B" data-notes="Cierre. Dejar esta diapositiva durante las preguntas: resume las tres cifras clave y el siguiente paso. Agradecer. Todo el análisis, los datos, el código y las fuentes de los supuestos están en el repositorio.">
+<section class="slide B">
   <div class="lockup ent"><i class="ulogo" role="img" aria-label="Universidad de los Andes"></i><span class="sep"></span><div class="dep"><b>Ingeniería de Sistemas y Computación</b><br>Escuela de Posgrado</div></div>
   <div class="cl-left">
-    <span class="bey ent">¿Preguntas?</span>
     <h1 class="cl-big ent" style="--d:.08s">Gracias</h1>
     <div class="team ent" style="--d:.2s">
       <div><b>Lina Muñoz</b><span>202310172</span></div>
@@ -592,22 +585,20 @@ body.show-help #help{opacity:1}
     <div class="row"><b>COP 380 M</b><span>al año deja la campaña de retención dirigida por el modelo</span></div>
     <div class="row"><b>COP 508 M</b><span>de VPN a 3 años; en caja, el dinero vuelve en el mes 67</span></div>
     <div class="row"><b>86%</b><span>de 10.000 escenarios tienen VPN positivo; en el 76% supera a la mejor opción sin modelo</span></div>
-    <div class="nextstep"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 2v7.527a2 2 0 0 1-.211.896L4.72 20.55a1 1 0 0 0 .9 1.45h12.76a1 1 0 0 0 .9-1.45l-5.069-10.127A2 2 0 0 1 14 9.527V2"/> <path d="M8.5 2h7"/> <path d="M7 16h10"/></svg><p><b>Siguiente paso:</b> un piloto con grupo de control, y escalar si la oferta convence a más del 15% de los clientes en riesgo.</p></div>
   </div>
   <div class="pg"><b>15</b> / 15</div>
 </section>
 <div id="cnt"></div>
 <div id="bar"></div>
 </div></div>
-<div id="notes"></div>
 <script>
 (function(){
   var deck=document.getElementById('deck');
   var slides=[].slice.call(document.querySelectorAll('.slide'));
-  var cnt=document.getElementById('cnt'), bar=document.getElementById('bar'), notes=document.getElementById('notes');
+  var cnt=document.getElementById('cnt'), bar=document.getElementById('bar');
   var N=slides.length;
   var maxs=slides.map(function(s){var m=0;s.querySelectorAll('[data-step]').forEach(function(e){m=Math.max(m,+e.dataset.step)});return m;});
-  var i=0, st=0, showNotes=false;
+  var i=0, st=0;
   function fit(){var s=Math.min(window.innerWidth/1600,window.innerHeight/900);deck.style.transform='scale('+s+')';}
   function fmt(v,d,miles){var t=v.toFixed(d).split('.');if(miles)t[0]=t[0].replace(/\B(?=(\d{3})+(?!\d))/g,'.');return t.join(',');}
   function countUp(el,instant){
@@ -639,8 +630,6 @@ body.show-help #help{opacity:1}
     deck.classList.toggle('dark',!s.classList.contains('L'));
     cnt.innerHTML=i?'<b>'+i+'</b> / '+(N-1):'';
     bar.style.width=(i/(N-1)*100)+'%';
-    var t=s.dataset.notes||''; notes.innerHTML='';var h=document.createElement('b');h.textContent='Notas · diapositiva '+(i+1)+' de '+N;notes.appendChild(h);notes.appendChild(document.createTextNode(t));
-    notes.classList.toggle('show',showNotes&&!!t);
     try{history.replaceState(null,'','#'+(i+1));}catch(e){}
   }
   function next(){ if(st<maxs[i]){st++;apply(false);} else if(i<N-1){show(i+1,0,false);} }
@@ -652,7 +641,6 @@ body.show-help #help{opacity:1}
     if(['ArrowRight','ArrowDown','PageDown',' ','Enter'].indexOf(k)>-1){e.preventDefault();next();}
     else if(['ArrowLeft','ArrowUp','PageUp','Backspace'].indexOf(k)>-1){e.preventDefault();prev();}
     else if(k==='Home'){e.preventDefault();show(0,0,false);} else if(k==='End'){e.preventDefault();show(N-1,maxs[N-1],true);}
-    else if(k==='n'||k==='N'){showNotes=!showNotes;notes.classList.toggle('show',showNotes);}
     else if(k==='f'||k==='F'){e.preventDefault();fullscreen();}
     else if(k==='?'){document.body.classList.toggle('show-help');}
   });

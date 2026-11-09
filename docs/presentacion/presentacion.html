@@ -317,13 +317,37 @@ body.show-help #help{opacity:1}
     </figcaption>
   </figure>
 </section>
+<section class="slide L">
+  <div class="brand" role="img" aria-label="Universidad de los Andes"><i class="ulogo"></i></div>
+  <div class="pad">
+    <div class="kicker ent">Recomendación</div>
+    <h2 class="ent" style="--d:.08s">Recomendamos empezar con un piloto y escalar solo si la oferta convence a <em>más del 15%</em></h2>
+    <div class="next">
+      <div class="nx card hl rv" data-step="0" style="--d:.25s"><div class="top"><span class="n">01</span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 2v7.527a2 2 0 0 1-.211.896L4.72 20.55a1 1 0 0 0 .9 1.45h12.76a1 1 0 0 0 .9-1.45l-5.069-10.127A2 2 0 0 1 14 9.527V2"/> <path d="M8.5 2h7"/> <path d="M7 16h10"/></svg></div>
+        <h3>Piloto con grupo de control</h3>
+        <p>Ofrecer la campaña a una parte de los clientes señalados y dejar a otra parte sin contactar.</p>
+        <div class="owner">Mide <b>cuántos convence la oferta</b></div></div>
+      <div class="nx card rv" data-step="0" style="--d:.38s"><div class="top"><span class="n">02</span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/> <path d="M21 3v5h-5"/> <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/> <path d="M8 16H3v5"/></svg></div>
+        <h3>Reentrenar con datos locales</h3>
+        <p>Validar el modelo con clientes del banco colombiano antes de usarlo a escala.</p>
+        <div class="owner">Mide <b>precisión y recall en Colombia</b></div></div>
+      <div class="nx card rv" data-step="0" style="--d:.51s"><div class="top"><span class="n">03</span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/> <polyline points="16 7 22 7 22 13"/></svg></div>
+        <h3>Escalar con el umbral de 0,30</h3>
+        <p>Contactar a quienes superen esa probabilidad y recalcularla si cambian los costos.</p>
+        <div class="owner">Mide <b>ganancia y churn cada trimestre</b></div></div>
+    </div>
+    <div class="reveal rv" data-step="1"><div class="rl"></div><div class="rt">Regla de decisión: <b>escalar si el piloto muestra una efectividad mayor al 15%</b></div><div class="rl"></div></div>
+  </div>
+  <div class="foot">Por qué: con el modelo, la campaña deja COP 380 M al año y el VPN a 3 años es de COP 508 M. El resultado depende sobre todo de la oferta: si convence a menos del 14,6% de los clientes en riesgo, el modelo no se paga.</div>
+  <div class="pg"><b>1</b> / 14</div>
+</section>
 <section class="slide D">
   <div class="brand" role="img" aria-label="Universidad de los Andes"><i class="ulogo"></i></div>
   <div class="btxt">
-    <span class="bey ent">Sección 1 de 4</span>
+    <span class="bey ent">Sección 1 de 3</span>
     <h1 class="bbig ent" style="--d:.08s">El problema y los datos</h1>
   </div>
-  <div class="pg"><b>1</b> / 15</div>
+  <div class="pg"><b>2</b> / 14</div>
 </section>
 <section class="slide L">
   <div class="brand" role="img" aria-label="Universidad de los Andes"><i class="ulogo"></i></div>
@@ -354,7 +378,7 @@ body.show-help #help{opacity:1}
     <sup>1</sup>Superintendencia Financiera de Colombia, citada en el enunciado del taller. <sup>2</sup>Tasa de deserción de entidades financieras minoristas del enunciado (15%).<br>
     <sup>3</sup>Valor de vida del cliente con margen de 35% y tasa de descuento de 16,5%, estimado en el notebook 3.
   </div>
-  <div class="pg"><b>2</b> / 15</div>
+  <div class="pg"><b>3</b> / 14</div>
 </section>
 <section class="slide L">
   <div class="brand" role="img" aria-label="Universidad de los Andes"><i class="ulogo"></i></div>
@@ -379,7 +403,7 @@ body.show-help #help{opacity:1}
         <div class="fig">20.000</div><p>clientes de un banco colombiano, con costos e ingresos que tienen fuente.</p></div>
     </div>
   </div>
-  <div class="pg"><b>3</b> / 15</div>
+  <div class="pg"><b>4</b> / 14</div>
 </section>
 <section class="slide L">
   <div class="brand" role="img" aria-label="Universidad de los Andes"><i class="ulogo"></i></div>
@@ -397,15 +421,15 @@ body.show-help #help{opacity:1}
     </div>
   </div>
   <div class="foot rv" data-step="0" style="--d:.6s">Muestra de 10.000 clientes. La línea punteada es la tasa promedio de abandono, 20,4%.</div>
-  <div class="pg"><b>4</b> / 15</div>
+  <div class="pg"><b>5</b> / 14</div>
 </section>
 <section class="slide D">
   <div class="brand" role="img" aria-label="Universidad de los Andes"><i class="ulogo"></i></div>
   <div class="btxt">
-    <span class="bey ent">Sección 2 de 4</span>
+    <span class="bey ent">Sección 2 de 3</span>
     <h1 class="bbig ent" style="--d:.08s">El modelo</h1>
   </div>
-  <div class="pg"><b>5</b> / 15</div>
+  <div class="pg"><b>6</b> / 14</div>
 </section>
 <section class="slide L">
   <div class="brand" role="img" aria-label="Universidad de los Andes"><i class="ulogo"></i></div>
@@ -434,7 +458,7 @@ body.show-help #help{opacity:1}
     </div>
   </div>
   <div class="foot rv" data-step="1">2.000 clientes de prueba con 20% de churn y umbral de 0,5. F1 de 0,637. En el banco, con 15% de churn y el umbral de 0,30, la precisión es de 34%.</div>
-  <div class="pg"><b>6</b> / 15</div>
+  <div class="pg"><b>7</b> / 14</div>
 </section>
 <section class="slide L">
   <div class="brand" role="img" aria-label="Universidad de los Andes"><i class="ulogo"></i></div>
@@ -450,15 +474,15 @@ body.show-help #help{opacity:1}
       </div>
     </div>
   </div>
-  <div class="pg"><b>7</b> / 15</div>
+  <div class="pg"><b>8</b> / 14</div>
 </section>
 <section class="slide D">
   <div class="brand" role="img" aria-label="Universidad de los Andes"><i class="ulogo"></i></div>
   <div class="btxt">
-    <span class="bey ent">Sección 3 de 4</span>
+    <span class="bey ent">Sección 3 de 3</span>
     <h1 class="bbig ent" style="--d:.08s">El valor para el banco</h1>
   </div>
-  <div class="pg"><b>8</b> / 15</div>
+  <div class="pg"><b>9</b> / 14</div>
 </section>
 <section class="slide L">
   <div class="brand" role="img" aria-label="Universidad de los Andes"><i class="ulogo"></i></div>
@@ -475,7 +499,7 @@ body.show-help #help{opacity:1}
     </div>
   </div>
   <div class="foot rv" data-step="1">Conjunto de prueba. Intervalo de 95%: COP 349-410 M al año. Ganancia de la campaña, antes de los costos del modelo. La diferencia entre 0,30 y 0,5 no es concluyente.</div>
-  <div class="pg"><b>9</b> / 15</div>
+  <div class="pg"><b>10</b> / 14</div>
 </section>
 <section class="slide L">
   <div class="brand" role="img" aria-label="Universidad de los Andes"><i class="ulogo"></i></div>
@@ -493,7 +517,7 @@ body.show-help #help{opacity:1}
       <div><span>Equilibrio en caja</span><b>Mes 67</b>el margen de cada cliente llega en varios años</div>
     </div>
   </div>
-  <div class="pg"><b>10</b> / 15</div>
+  <div class="pg"><b>11</b> / 14</div>
 </section>
 <section class="slide L">
   <div class="brand" role="img" aria-label="Universidad de los Andes"><i class="ulogo"></i></div>
@@ -519,43 +543,12 @@ body.show-help #help{opacity:1}
       </div>
     </div>
   </div>
-  <div class="pg"><b>11</b> / 15</div>
-</section>
-<section class="slide D">
-  <div class="brand" role="img" aria-label="Universidad de los Andes"><i class="ulogo"></i></div>
-  <div class="btxt">
-    <span class="bey ent">Sección 4 de 4</span>
-    <h1 class="bbig ent" style="--d:.08s">Qué recomendamos</h1>
-  </div>
-  <div class="pg"><b>12</b> / 15</div>
+  <div class="pg"><b>12</b> / 14</div>
 </section>
 <section class="slide L">
   <div class="brand" role="img" aria-label="Universidad de los Andes"><i class="ulogo"></i></div>
   <div class="pad">
-    <div class="kicker ent">04 · Qué recomendamos</div>
-    <h2 class="ent" style="--d:.08s">Recomendamos empezar con un piloto y escalar solo si la oferta convence a <em>más del 15%</em></h2>
-    <div class="next">
-      <div class="nx card hl rv" data-step="0" style="--d:.25s"><div class="top"><span class="n">01</span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 2v7.527a2 2 0 0 1-.211.896L4.72 20.55a1 1 0 0 0 .9 1.45h12.76a1 1 0 0 0 .9-1.45l-5.069-10.127A2 2 0 0 1 14 9.527V2"/> <path d="M8.5 2h7"/> <path d="M7 16h10"/></svg></div>
-        <h3>Piloto con grupo de control</h3>
-        <p>Ofrecer la campaña a una parte de los clientes señalados y dejar a otra parte sin contactar.</p>
-        <div class="owner">Mide <b>cuántos convence la oferta</b></div></div>
-      <div class="nx card rv" data-step="0" style="--d:.38s"><div class="top"><span class="n">02</span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/> <path d="M21 3v5h-5"/> <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/> <path d="M8 16H3v5"/></svg></div>
-        <h3>Reentrenar con datos locales</h3>
-        <p>Validar el modelo con clientes del banco colombiano antes de usarlo a escala.</p>
-        <div class="owner">Mide <b>precisión y recall en Colombia</b></div></div>
-      <div class="nx card rv" data-step="0" style="--d:.51s"><div class="top"><span class="n">03</span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/> <polyline points="16 7 22 7 22 13"/></svg></div>
-        <h3>Escalar con el umbral de 0,30</h3>
-        <p>Contactar a quienes superen esa probabilidad y recalcularla si cambian los costos.</p>
-        <div class="owner">Mide <b>ganancia y churn cada trimestre</b></div></div>
-    </div>
-    <div class="reveal rv" data-step="1"><div class="rl"></div><div class="rt">Regla de decisión: <b>escalar si el piloto muestra una efectividad mayor al 15%</b></div><div class="rl"></div></div>
-  </div>
-  <div class="pg"><b>13</b> / 15</div>
-</section>
-<section class="slide L">
-  <div class="brand" role="img" aria-label="Universidad de los Andes"><i class="ulogo"></i></div>
-  <div class="pad">
-    <div class="kicker ent">04 · Qué recomendamos</div>
+    <div class="kicker ent">03 · El valor para el banco</div>
     <h2 class="ent" style="--d:.08s">Cuatro supuestos que hay que validar <em>antes de confiar</em> en las cifras</h2>
     <div class="pillars">
       <div class="pillar card rv" data-step="0" style="--d:.25s"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/> <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/> <path d="M2 12h20"/></svg><h3>Datos europeos</h3>
@@ -568,7 +561,7 @@ body.show-help #help{opacity:1}
         <p>Se requiere autorización de los clientes (Ley 1581), y el modelo usa género y edad.</p></div>
     </div>
   </div>
-  <div class="pg"><b>14</b> / 15</div>
+  <div class="pg"><b>13</b> / 14</div>
 </section>
 <section class="slide B">
   <div class="lockup ent"><i class="ulogo" role="img" aria-label="Universidad de los Andes"></i><span class="sep"></span><div class="dep"><b>Ingeniería de Sistemas y Computación</b><br>Escuela de Posgrado</div></div>
@@ -586,7 +579,7 @@ body.show-help #help{opacity:1}
     <div class="row"><b>COP 508 M</b><span>de VPN a 3 años; en caja, el dinero vuelve en el mes 67</span></div>
     <div class="row"><b>86%</b><span>de 10.000 escenarios tienen VPN positivo; en el 76% supera a la mejor opción sin modelo</span></div>
   </div>
-  <div class="pg"><b>15</b> / 15</div>
+  <div class="pg"><b>14</b> / 14</div>
 </section>
 <div id="cnt"></div>
 <div id="bar"></div>

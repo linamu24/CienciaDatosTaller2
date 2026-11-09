@@ -18,7 +18,7 @@ El repositorio cubre los puntos 1 a 7 del enunciado.
 3. **Análisis cuantitativo.** Métricas en el conjunto de prueba, intervalos de confianza por bootstrapping y pruebas estadísticas pareadas (A/B por bootstrapping y McNemar) para justificar la elección del modelo.
 4. **Análisis cualitativo.** Interpretación global y de predicciones individuales con gráficos ICE y PDP, valores SHAP y LIME, y comparación entre los modelos.
 5. **Generación de valor.** Ganancia esperada de una campaña de retención dirigida por el modelo en un banco de 20.000 clientes con 15% de churn, umbral de decisión elegido según el dinero, punto de equilibrio en valor y en caja, VPN a 3 años, sensibilidad, Monte Carlo y limitaciones. Los supuestos tienen fuente.
-6. **Insights.** Presentación corta con los hallazgos principales y la recomendación final para el negocio.
+6. **Insights.** Presentación corta que abre con la recomendación para el negocio y luego muestra los hallazgos que la sustentan.
 7. **Declaración de uso de IA generativa.** Está al final de este README.
 
 ## Principales hallazgos

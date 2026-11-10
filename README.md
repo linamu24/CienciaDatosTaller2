@@ -44,8 +44,7 @@ CienciaDatosTaller2/
 ├── docs/
 │   ├── EnunciadoTaller2.pdf               # Enunciado del taller
 │   └── presentacion/
-│       ├── presentacion.html              # Punto 6. Presentación (se abre en el navegador)
-│       └── presentacion.pdf               # La misma presentación en PDF
+│       └── presentacion.html              # Punto 6. Presentación (se abre en el navegador)
 ├── 01_entendimiento_preparacion.ipynb     # Punto 1. Entendimiento, calidad, limpieza y EDA
 ├── 02_modelado_evaluacion.ipynb           # Puntos 2, 3 y 4. Modelado, evaluación e interpretación
 ├── 03_generacion_valor.ipynb              # Punto 5. Generación de valor
@@ -65,7 +64,7 @@ Los tres notebooks se ejecutan de principio a fin sin errores con "Restart & Run
 
 **Reproducibilidad.** Se fija la semilla `42` en todos los procesos aleatorios y los resultados reportados se obtuvieron con las versiones de `requirements.txt`. Aun así, el Random Forest puede dar resultados ligeramente distintos en otro computador (por ejemplo, un F1 de 0,633 en lugar de 0,637). El notebook 2 lo explica en la nota de reproducibilidad de la sección 3.3.
 
-**Presentación.** `docs/presentacion/presentacion.html` se abre en cualquier navegador. Se avanza con la flecha derecha o con un clic, y la tecla `F` pone pantalla completa. Funciona sin conexión a internet, porque la fuente tipográfica va dentro del archivo. `presentacion.pdf` tiene las mismas diapositivas.
+**Presentación.** `docs/presentacion/presentacion.html` se abre en cualquier navegador. Se avanza con la flecha derecha o con un clic, y la tecla `F` pone pantalla completa. Funciona sin conexión a internet, porque la fuente tipográfica va dentro del archivo.
 
 ## Dependencias
 

@@ -41,7 +41,6 @@ p{text-wrap:pretty}
 .L .brand{color:var(--ink);opacity:.72}
 .D .brand,.B .brand{color:#fff;opacity:.9;left:120px;right:auto;top:64px}
 .pad{position:absolute;inset:0;padding:82px 120px 100px;display:flex;flex-direction:column}
-.kicker{font-size:17px;letter-spacing:.04em;color:var(--mut);margin-bottom:18px}
 h2{font-size:40px;font-weight:400;line-height:1.22;letter-spacing:-.01em;max-width:1300px;text-wrap:balance}
 h2 em,.acc{font-style:normal;color:var(--acc)}
 .lead{font-size:22px;line-height:1.4;color:var(--mut);margin-top:14px;max-width:1150px}
@@ -51,7 +50,6 @@ h2 em,.acc{font-style:normal;color:var(--acc)}
 
 /* ===== Portada, separadores y cierre ===== */
 .btxt{position:absolute;left:120px;right:120px;bottom:118px}
-.bey{display:block;font-size:15px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.72);margin-bottom:22px}
 .bbig{font-size:72px;line-height:1.08;font-weight:500;letter-spacing:-2px;max-width:1150px;text-wrap:balance}
 .bsub{margin-top:30px;font-size:21px;line-height:1.5;color:rgba(255,255,255,.82)}
 .bsub b{font-weight:500;color:#fff}
@@ -61,7 +59,7 @@ h2 em,.acc{font-style:normal;color:var(--acc)}
   box-shadow:0 18px 40px -26px rgba(6,16,53,.38);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
 .card.hl{background:linear-gradient(180deg,#F1F7FD,#E8F1FB);border-color:transparent;
   box-shadow:0 0 0 1px rgba(2,109,204,.35),inset 0 1px 0 #fff,0 18px 40px -26px rgba(2,109,204,.5)}
-.n0{font-size:15px;color:var(--fnt);font-variant-numeric:tabular-nums;margin-right:10px;font-weight:400}
+.n0{font-size:15px;color:var(--fnt);margin-right:10px;font-weight:400}
 .hl .n0{color:var(--acc)}
 .ic{color:var(--acc)}
 .arrow{width:.62em;height:.62em;vertical-align:.04em;margin:0 .12em;color:var(--fnt)}
@@ -69,7 +67,7 @@ h2 em,.acc{font-style:normal;color:var(--acc)}
 /* KPI */
 .kpis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:48px}
 .kpi{padding:36px 36px 34px;min-height:390px;display:flex;flex-direction:column}
-.kpi .v{font-size:76px;font-weight:500;letter-spacing:-.03em;line-height:1;font-variant-numeric:tabular-nums;white-space:nowrap}
+.kpi .v{font-size:76px;font-weight:500;letter-spacing:-.03em;line-height:1;white-space:nowrap}
 .kpi.hl .v{color:var(--acc)}
 .kpi .v small{font-size:32px;color:var(--mut);margin-right:8px;letter-spacing:-.01em}
 .kpi .v sup{font-size:19px;color:var(--fnt);vertical-align:top;position:relative;top:6px;margin-left:6px;font-weight:500;letter-spacing:0}
@@ -85,7 +83,7 @@ h2 em,.acc{font-style:normal;color:var(--acc)}
 .fstep{padding:30px 28px;display:flex;flex-direction:column;min-height:380px}
 .fstep .ic{width:34px;height:34px}
 .fstep .t{font-size:22px;font-weight:500;margin-top:26px;display:flex;align-items:baseline}
-.fstep .fig{font-size:58px;font-weight:500;letter-spacing:-.03em;line-height:1;margin-top:auto;font-variant-numeric:tabular-nums}
+.fstep .fig{font-size:58px;font-weight:500;letter-spacing:-.03em;line-height:1;margin-top:auto}
 .fstep.hl .fig{color:var(--acc)}
 .fstep p{font-size:18px;line-height:1.45;color:var(--mut);margin-top:12px;min-height:105px}
 .fx{display:flex;align-items:center;justify-content:center;color:var(--ln2)}
@@ -114,7 +112,7 @@ h2 em,.acc{font-style:normal;color:var(--acc)}
 /* Pila de cifras */
 .stack{display:flex;flex-direction:column;gap:16px}
 .mini{padding:22px 28px;flex:1;display:flex;flex-direction:column;justify-content:center}
-.mini .v{font-size:46px;font-weight:500;letter-spacing:-.03em;line-height:1.05;font-variant-numeric:tabular-nums;white-space:nowrap}
+.mini .v{font-size:46px;font-weight:500;letter-spacing:-.03em;line-height:1.05;white-space:nowrap}
 .mini.hl .v{color:var(--acc)}
 .mini .v small{font-size:22px;color:var(--mut);margin-right:6px;letter-spacing:0}
 .mini p{font-size:18px;line-height:1.4;color:var(--mut);margin-top:6px}
@@ -127,12 +125,12 @@ h2 em,.acc{font-style:normal;color:var(--acc)}
 .note p + p{margin-top:14px}
 .note b{color:var(--ink);font-weight:600}
 
-/* Condiciones (86%) */
+/* Condiciones */
 .cond{padding:32px 34px;display:flex;flex-direction:column}
-.cond .big{font-size:88px;font-weight:500;letter-spacing:-.03em;line-height:1;color:var(--acc);font-variant-numeric:tabular-nums}
+.cond .big{font-size:88px;font-weight:500;letter-spacing:-.03em;line-height:1;color:var(--acc)}
 .cond .bl{font-size:20px;line-height:1.4;color:var(--ink);margin-top:10px}
 .cond hr{border:0;border-top:1px solid rgba(2,109,204,.22);margin:24px 0 18px}
-.lb{font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#6B7280}
+.lb{font-size:19px;font-weight:500;color:var(--ink)}
 .fl{list-style:none;margin:14px 0 0;padding:0;display:flex;flex-direction:column;gap:10px}
 .fl li{position:relative;padding-left:20px;font-size:18px;line-height:1.4;color:var(--mut)}
 .fl li::before{content:'';position:absolute;left:2px;top:10px;width:7px;height:7px;border-radius:50%;background:var(--acc)}
@@ -143,7 +141,7 @@ h2 em,.acc{font-style:normal;color:var(--acc)}
 .nx{padding:32px 32px 28px;display:flex;flex-direction:column;min-height:440px}
 .nx .top{display:flex;align-items:center;justify-content:space-between}
 .nx .top .ic{width:32px;height:32px}
-.nx .n{font-size:15px;color:var(--fnt);font-variant-numeric:tabular-nums}
+.nx .n{font-size:15px;color:var(--fnt)}
 .nx h3{font-size:28px;font-weight:500;line-height:1.22;letter-spacing:-.3px;margin-top:30px}
 .nx p{font-size:19px;line-height:1.45;color:var(--mut);margin-top:12px}
 .nx .owner{margin-top:auto;padding-top:16px;border-top:1px solid var(--ln);font-size:16px;color:var(--mut)}
@@ -164,31 +162,34 @@ h2 em,.acc{font-style:normal;color:var(--acc)}
 /* ===== Gráficos (tema claro) ===== */
 svg text{font-family:var(--font)}
 .chart{display:block;overflow:visible}
-.chart .grid{stroke:#E6EAEE;stroke-width:1}
-.chart .zero,.chart .axis{stroke:#9AA6B2;stroke-width:1.2}
+.chart .grid{stroke:#ECEFF3;stroke-width:1}
+.chart .zero,.chart .axis{stroke:#AEB8C2;stroke-width:1}
 .chart .ax{font-size:15px;fill:#7A8A99}
 .chart .cat{font-size:18px;fill:#061035}
 .chart .cat.hl{font-weight:600}
-.chart .val{font-size:18px;font-weight:500;fill:#5B6773;font-variant-numeric:tabular-nums}
+.chart .val{font-size:18px;font-weight:500;fill:#5B6773}
 .chart .val.big{font-size:22px}
 .chart .val.hl{fill:#061035;font-weight:600}
 .chart .val.halo{paint-order:stroke;stroke:#fff;stroke-width:5px;stroke-linejoin:round}
-.chart .bar{fill:#C9D3DE}
+.chart .bar{fill:#CDD6E0}
 .chart .bar.hl{fill:#026DCC}
 .chart .bar.mute{fill:#E1E5E9}
 .chart .bar.good{fill:#026DCC}
 .chart .bar.bad{fill:#D64545}
 .lg i.good{background:#026DCC} .lg i.bad{background:#D64545}
-.chart .avg{stroke:#7A8A99;stroke-width:1.4;stroke-dasharray:6 6}
+.chart .avg{stroke:#8A97A5;stroke-width:1;stroke-dasharray:4 4}
 .chart .base{stroke:#061035;stroke-width:2}
 .chart .inbar{font-size:15px;font-weight:600;fill:#fff}
-.chart .band{fill:rgba(6,16,53,.045)}
-.chart .line{fill:none;stroke:#026DCC;stroke-width:3.5;stroke-linejoin:round;stroke-linecap:round}
+.chart .area.good{fill:rgba(2,109,204,.08)}
+.chart .area.bad{fill:rgba(214,69,69,.08)}
+.chart .line{fill:none;stroke:#026DCC;stroke-width:3;stroke-linejoin:round;stroke-linecap:round}
 .chart .line.dash{stroke-width:2.5;stroke-dasharray:9 7}
 .chart .line.caja{stroke:#D64545}
 .chart .node.caja{fill:#D64545}
 .lg i.ln.caja{background:#D64545}
-.chart .node{fill:#026DCC;stroke:#fff;stroke-width:3}
+.chart .node{fill:#026DCC;stroke:#fff;stroke-width:2.5}
+.chart .node.bad{fill:#D64545}
+.chart .node.todos{fill:#9AA6B2}
 
 /* ===== Movimiento ===== */
 @keyframes bIn{from{opacity:0;transform:translateY(18px)}}
@@ -209,7 +210,7 @@ svg text{font-family:var(--font)}
 @media (prefers-reduced-motion:reduce){.rv,.draw,.node,.grow,.growx,.fadein,.meter i{transition:none!important}.slide.enter .ent{animation:none}}
 
 /* ===== Contador, progreso y ayuda ===== */
-#cnt{position:absolute;right:120px;bottom:42px;font-size:14px;color:#7A8798;font-variant-numeric:tabular-nums;z-index:20}
+#cnt{position:absolute;right:120px;bottom:42px;font-size:14px;color:#7A8798;z-index:20}
 #cnt b{color:var(--acc);font-weight:500}
 #bar{position:absolute;left:0;bottom:0;height:3px;background:var(--acc2);transition:width .16s ease;z-index:20}
 #deck.dark #cnt{color:rgba(255,255,255,.6)}
@@ -230,7 +231,7 @@ body.show-help #help{opacity:1}
   .rv,.ent{opacity:1!important;transform:none!important;animation:none!important}
   .draw{stroke-dashoffset:0!important}.node{opacity:1!important;transform:none!important}
   .grow,.growx,.meter i{transform:none!important}.fadein{opacity:1!important}
-  .pg{display:block;position:absolute;right:120px;bottom:42px;font-size:14px;color:#7A8798;font-variant-numeric:tabular-nums}
+  .pg{display:block;position:absolute;right:120px;bottom:42px;font-size:14px;color:#7A8798}
   .pg b{color:var(--acc);font-weight:500}
   .D .pg,.B .pg{color:rgba(255,255,255,.6)} .D .pg b,.B .pg b{color:#fff}
   #cnt,#bar,#help{display:none!important}
@@ -256,7 +257,7 @@ body.show-help #help{opacity:1}
 .cv-sub{margin-top:24px;font-size:22px;line-height:1.4;color:rgba(255,255,255,.82);max-width:760px}
 .cv-meta{display:flex;gap:44px;margin-top:44px;padding-top:22px;border-top:1px solid rgba(255,255,255,.28);font-size:17px;color:rgba(255,255,255,.72)}
 .cv-meta b{display:block;font-size:20px;font-weight:500;color:#fff;margin-bottom:4px}
-.cv-meta span{font-variant-numeric:tabular-nums}
+.cv-meta span{}
 .cv-fig{position:absolute;right:120px;top:176px;width:430px;margin:0}
 .dots{display:block;overflow:visible}
 .dots circle{transform-box:fill-box;transform-origin:center}
@@ -282,7 +283,7 @@ body.show-help #help{opacity:1}
 .cl-big{font-size:132px;font-weight:500;letter-spacing:-.04em;line-height:.95}
 .team{display:flex;gap:48px;margin-top:46px;padding-top:22px;border-top:1px solid rgba(255,255,255,.28)}
 .team b{display:block;font-size:22px;font-weight:500;color:#fff}
-.team span{display:block;margin-top:4px;font-size:16px;color:rgba(255,255,255,.7);font-variant-numeric:tabular-nums}
+.team span{display:block;margin-top:4px;font-size:16px;color:rgba(255,255,255,.7)}
 .repo{display:flex;align-items:center;gap:10px;margin-top:26px;font-size:17px;color:rgba(255,255,255,.85)}
 .repo .gh{width:20px;height:20px}
 .cl-card{position:absolute;right:120px;top:176px;width:610px;padding:32px 36px 30px;border-radius:18px;
@@ -290,7 +291,7 @@ body.show-help #help{opacity:1}
   box-shadow:0 30px 60px -30px rgba(2,20,70,.55)}
 .cl-card .lb{color:rgba(255,255,255,.72)}
 .cl-card .row{display:grid;grid-template-columns:215px 1fr;gap:20px;align-items:center;padding:20px 0;border-bottom:1px solid rgba(255,255,255,.18)}
-.cl-card .row b{font-size:38px;font-weight:500;letter-spacing:-.02em;color:#fff;white-space:nowrap;font-variant-numeric:tabular-nums}
+.cl-card .row b{font-size:38px;font-weight:500;letter-spacing:-.02em;color:#fff;white-space:nowrap}
 .cl-card .row span{font-size:18px;line-height:1.4;color:rgba(255,255,255,.85)}
 .cl-card .row:last-child{border-bottom:0;padding-bottom:0}
 @media print{.dots *{animation:none!important}}
@@ -298,270 +299,185 @@ body.show-help #help{opacity:1}
 </style>
 </head>
 <body>
-<div id="help">Avanza con <kbd>→</kbd> · pantalla completa <kbd>F</kbd> · ayuda <kbd>?</kbd></div>
+<div id="help">Avanza con <kbd>→</kbd>, pantalla completa <kbd>F</kbd>, ayuda <kbd>?</kbd></div>
 <div id="viewport"><div id="deck">
 
 <section class="slide B">
   <div class="lockup ent"><i class="ulogo" role="img" aria-label="Universidad de los Andes"></i><span class="sep"></span><div class="dep"><b>Ingeniería de Sistemas y Computación</b><br>Escuela de Posgrado</div></div>
   <div class="cv-txt">
-    <span class="bey ent">MINE-4101 · Ciencia de Datos Aplicada · Taller 2</span>
-    <h1 class="cv-title ent" style="--d:.08s">Retener al cliente correcto vale COP 380 millones al año</h1>
-    <p class="cv-sub ent" style="--d:.2s">Un modelo que predice qué clientes van a abandonar el banco, y cuánto vale usarlo en un banco colombiano.</p>
-    <div class="cv-meta ent" style="--d:.32s"><span><b>Lina Muñoz</b>202310172</span><span><b>Yair Andrade</b>202310241</span><span><b>Noviembre 2026</b>Semestre 2026-20</span></div>
+    <h1 class="cv-title ent" style="--d:.08s">Predecir el churn le deja a un banco COP 254 millones al año</h1>
+    <p class="cv-sub ent" style="--d:.2s">Entrenamos un modelo que predice qué clientes van a abandonar el banco y calculamos cuánto vale usarlo en un banco colombiano de 20.000 clientes.</p>
+    <div class="cv-meta ent" style="--d:.32s"><span><b>Lina Muñoz</b>202310172</span><span><b>Yair Andrade</b>202310241</span><span><b>Taller 2</b>MINE-4101, 2026-20</span></div>
   </div>
   <figure class="cv-fig">
-    <svg class="dots" viewBox="0 0 430 430" width="430" height="430" role="img" aria-label="De cada 100 clientes, 15 se van al año y el modelo retiene a casi 4"><circle class="d0" style="--d:0.35s" cx="21.5" cy="21.5" r="12"/><circle class="d0" style="--d:0.38s" cx="64.5" cy="21.5" r="12"/><circle class="d0" style="--d:0.41s" cx="107.5" cy="21.5" r="12"/><circle class="d0 out" style="--d:0.44s" cx="150.5" cy="21.5" r="12"/><circle class="ring" style="--d:1.79s" cx="150.5" cy="21.5" r="11"/><circle class="d0" style="--d:0.47s" cx="193.5" cy="21.5" r="12"/><circle class="d0" style="--d:0.50s" cx="236.5" cy="21.5" r="12"/><circle class="d0" style="--d:0.53s" cx="279.5" cy="21.5" r="12"/><circle class="d0" style="--d:0.56s" cx="322.5" cy="21.5" r="12"/><circle class="d0" style="--d:0.59s" cx="365.5" cy="21.5" r="12"/><circle class="d0" style="--d:0.62s" cx="408.5" cy="21.5" r="12"/><circle class="d0" style="--d:0.38s" cx="21.5" cy="64.5" r="12"/><circle class="d0" style="--d:0.41s" cx="64.5" cy="64.5" r="12"/><circle class="d0 out" style="--d:0.44s" cx="107.5" cy="64.5" r="12"/><circle class="ring" style="--d:1.79s" cx="107.5" cy="64.5" r="11"/><circle class="d0" style="--d:0.47s" cx="150.5" cy="64.5" r="12"/><circle class="d0" style="--d:0.50s" cx="193.5" cy="64.5" r="12"/><circle class="d0" style="--d:0.53s" cx="236.5" cy="64.5" r="12"/><circle class="d0" style="--d:0.56s" cx="279.5" cy="64.5" r="12"/><circle class="d0" style="--d:0.59s" cx="322.5" cy="64.5" r="12"/><circle class="d0 out" style="--d:0.62s" cx="365.5" cy="64.5" r="12"/><circle class="ring" style="--d:1.97s" cx="365.5" cy="64.5" r="11"/><circle class="d0" style="--d:0.65s" cx="408.5" cy="64.5" r="12"/><circle class="d0" style="--d:0.41s" cx="21.5" cy="107.5" r="12"/><circle class="d0" style="--d:0.44s" cx="64.5" cy="107.5" r="12"/><circle class="d0" style="--d:0.47s" cx="107.5" cy="107.5" r="12"/><circle class="d0" style="--d:0.50s" cx="150.5" cy="107.5" r="12"/><circle class="d0" style="--d:0.53s" cx="193.5" cy="107.5" r="12"/><circle class="d0" style="--d:0.56s" cx="236.5" cy="107.5" r="12"/><circle class="d0" style="--d:0.59s" cx="279.5" cy="107.5" r="12"/><circle class="d0 out" style="--d:0.62s" cx="322.5" cy="107.5" r="12"/><circle class="ring" style="--d:1.97s" cx="322.5" cy="107.5" r="11"/><circle class="d0" style="--d:0.65s" cx="365.5" cy="107.5" r="12"/><circle class="d0" style="--d:0.68s" cx="408.5" cy="107.5" r="12"/><circle class="d0" style="--d:0.44s" cx="21.5" cy="150.5" r="12"/><circle class="d0" style="--d:0.47s" cx="64.5" cy="150.5" r="12"/><circle class="d0" style="--d:0.50s" cx="107.5" cy="150.5" r="12"/><circle class="d0" style="--d:0.53s" cx="150.5" cy="150.5" r="12"/><circle class="d0 out" style="--d:0.56s" cx="193.5" cy="150.5" r="12"/><circle class="ring" style="--d:1.91s" cx="193.5" cy="150.5" r="11"/><circle class="d0" style="--d:0.59s" cx="236.5" cy="150.5" r="12"/><circle class="d0" style="--d:0.62s" cx="279.5" cy="150.5" r="12"/><circle class="d0" style="--d:0.65s" cx="322.5" cy="150.5" r="12"/><circle class="d0" style="--d:0.68s" cx="365.5" cy="150.5" r="12"/><circle class="d0" style="--d:0.71s" cx="408.5" cy="150.5" r="12"/><circle class="d0" style="--d:0.47s" cx="21.5" cy="193.5" r="12"/><circle class="d0 out" style="--d:0.50s" cx="64.5" cy="193.5" r="12"/><circle class="ring" style="--d:1.85s" cx="64.5" cy="193.5" r="11"/><circle class="d0" style="--d:0.53s" cx="107.5" cy="193.5" r="12"/><circle class="d0" style="--d:0.56s" cx="150.5" cy="193.5" r="12"/><circle class="d0" style="--d:0.59s" cx="193.5" cy="193.5" r="12"/><circle class="d0" style="--d:0.62s" cx="236.5" cy="193.5" r="12"/><circle class="d0" style="--d:0.65s" cx="279.5" cy="193.5" r="12"/><circle class="d0" style="--d:0.68s" cx="322.5" cy="193.5" r="12"/><circle class="d0" style="--d:0.71s" cx="365.5" cy="193.5" r="12"/><circle class="d0 out" style="--d:0.74s" cx="408.5" cy="193.5" r="12"/><circle class="ring" style="--d:2.09s" cx="408.5" cy="193.5" r="11"/><circle class="d0" style="--d:0.50s" cx="21.5" cy="236.5" r="12"/><circle class="d0" style="--d:0.53s" cx="64.5" cy="236.5" r="12"/><circle class="d0" style="--d:0.56s" cx="107.5" cy="236.5" r="12"/><circle class="d0" style="--d:0.59s" cx="150.5" cy="236.5" r="12"/><circle class="d0" style="--d:0.62s" cx="193.5" cy="236.5" r="12"/><circle class="d0" style="--d:0.65s" cx="236.5" cy="236.5" r="12"/><circle class="d0 out" style="--d:0.68s" cx="279.5" cy="236.5" r="12"/><circle class="ring" style="--d:2.03s" cx="279.5" cy="236.5" r="11"/><circle class="d0" style="--d:0.71s" cx="322.5" cy="236.5" r="12"/><circle class="d0" style="--d:0.74s" cx="365.5" cy="236.5" r="12"/><circle class="d0" style="--d:0.77s" cx="408.5" cy="236.5" r="12"/><circle class="d0" style="--d:0.53s" cx="21.5" cy="279.5" r="12"/><circle class="d0" style="--d:0.56s" cx="64.5" cy="279.5" r="12"/><circle class="d0 out" style="--d:0.59s" cx="107.5" cy="279.5" r="12"/><circle class="ring" style="--d:1.94s" cx="107.5" cy="279.5" r="11"/><circle class="d0" style="--d:0.62s" cx="150.5" cy="279.5" r="12"/><circle class="d0" style="--d:0.65s" cx="193.5" cy="279.5" r="12"/><circle class="d0" style="--d:0.68s" cx="236.5" cy="279.5" r="12"/><circle class="d0" style="--d:0.71s" cx="279.5" cy="279.5" r="12"/><circle class="d0" style="--d:0.74s" cx="322.5" cy="279.5" r="12"/><circle class="d0 out" style="--d:0.77s" cx="365.5" cy="279.5" r="12"/><circle class="ring" style="--d:2.12s" cx="365.5" cy="279.5" r="11"/><circle class="d0" style="--d:0.80s" cx="408.5" cy="279.5" r="12"/><circle class="d0" style="--d:0.56s" cx="21.5" cy="322.5" r="12"/><circle class="d0" style="--d:0.59s" cx="64.5" cy="322.5" r="12"/><circle class="d0" style="--d:0.62s" cx="107.5" cy="322.5" r="12"/><circle class="d0" style="--d:0.65s" cx="150.5" cy="322.5" r="12"/><circle class="d0" style="--d:0.68s" cx="193.5" cy="322.5" r="12"/><circle class="d0 out" style="--d:0.71s" cx="236.5" cy="322.5" r="12"/><circle class="ring" style="--d:2.06s" cx="236.5" cy="322.5" r="11"/><circle class="d0" style="--d:0.74s" cx="279.5" cy="322.5" r="12"/><circle class="d0" style="--d:0.77s" cx="322.5" cy="322.5" r="12"/><circle class="d0" style="--d:0.80s" cx="365.5" cy="322.5" r="12"/><circle class="d0" style="--d:0.83s" cx="408.5" cy="322.5" r="12"/><circle class="d0" style="--d:0.59s" cx="21.5" cy="365.5" r="12"/><circle class="d0 out" style="--d:0.62s" cx="64.5" cy="365.5" r="12"/><circle class="ring" style="--d:1.97s" cx="64.5" cy="365.5" r="11"/><circle class="d0" style="--d:0.65s" cx="107.5" cy="365.5" r="12"/><circle class="d0" style="--d:0.68s" cx="150.5" cy="365.5" r="12"/><circle class="d0" style="--d:0.71s" cx="193.5" cy="365.5" r="12"/><circle class="d0" style="--d:0.74s" cx="236.5" cy="365.5" r="12"/><circle class="d0" style="--d:0.77s" cx="279.5" cy="365.5" r="12"/><circle class="d0 out" style="--d:0.80s" cx="322.5" cy="365.5" r="12"/><circle class="ring" style="--d:2.15s" cx="322.5" cy="365.5" r="11"/><circle class="d0" style="--d:0.83s" cx="365.5" cy="365.5" r="12"/><circle class="d0" style="--d:0.86s" cx="408.5" cy="365.5" r="12"/><circle class="d0" style="--d:0.62s" cx="21.5" cy="408.5" r="12"/><circle class="d0" style="--d:0.65s" cx="64.5" cy="408.5" r="12"/><circle class="d0" style="--d:0.68s" cx="107.5" cy="408.5" r="12"/><circle class="d0 out" style="--d:0.71s" cx="150.5" cy="408.5" r="12"/><circle class="ring" style="--d:2.06s" cx="150.5" cy="408.5" r="11"/><circle class="d0" style="--d:0.74s" cx="193.5" cy="408.5" r="12"/><circle class="d0" style="--d:0.77s" cx="236.5" cy="408.5" r="12"/><circle class="d0" style="--d:0.80s" cx="279.5" cy="408.5" r="12"/><circle class="d0 out" style="--d:0.83s" cx="322.5" cy="408.5" r="12"/><circle class="ring" style="--d:2.18s" cx="322.5" cy="408.5" r="11"/><circle class="d0" style="--d:0.86s" cx="365.5" cy="408.5" r="12"/><circle class="d0" style="--d:0.89s" cx="408.5" cy="408.5" r="12"/><circle class="halo" style="--d:2.75s" cx="365.5" cy="64.5" r="19"/><circle class="keep" style="--d:2.75s" cx="365.5" cy="64.5" r="12"/><circle class="halo" style="--d:2.93s" cx="64.5" cy="193.5" r="19"/><circle class="keep" style="--d:2.93s" cx="64.5" cy="193.5" r="12"/><circle class="halo" style="--d:3.11s" cx="365.5" cy="279.5" r="19"/><circle class="keep" style="--d:3.11s" cx="365.5" cy="279.5" r="12"/><circle class="halo" style="--d:3.29s" cx="150.5" cy="408.5" r="19"/><circle class="keep" style="--d:3.29s" cx="150.5" cy="408.5" r="12"/></svg>
+    <svg class="dots" viewBox="0 0 430 430" width="430" height="430" role="img" aria-label="De cada 100 clientes, 15 se van al año y el modelo retiene a casi 3"><circle class="d0" style="--d:0.35s" cx="21.5" cy="21.5" r="12"/><circle class="d0" style="--d:0.38s" cx="64.5" cy="21.5" r="12"/><circle class="d0" style="--d:0.41s" cx="107.5" cy="21.5" r="12"/><circle class="d0 out" style="--d:0.44s" cx="150.5" cy="21.5" r="12"/><circle class="ring" style="--d:1.79s" cx="150.5" cy="21.5" r="11"/><circle class="d0" style="--d:0.47s" cx="193.5" cy="21.5" r="12"/><circle class="d0" style="--d:0.50s" cx="236.5" cy="21.5" r="12"/><circle class="d0" style="--d:0.53s" cx="279.5" cy="21.5" r="12"/><circle class="d0" style="--d:0.56s" cx="322.5" cy="21.5" r="12"/><circle class="d0" style="--d:0.59s" cx="365.5" cy="21.5" r="12"/><circle class="d0" style="--d:0.62s" cx="408.5" cy="21.5" r="12"/><circle class="d0" style="--d:0.38s" cx="21.5" cy="64.5" r="12"/><circle class="d0" style="--d:0.41s" cx="64.5" cy="64.5" r="12"/><circle class="d0 out" style="--d:0.44s" cx="107.5" cy="64.5" r="12"/><circle class="ring" style="--d:1.79s" cx="107.5" cy="64.5" r="11"/><circle class="d0" style="--d:0.47s" cx="150.5" cy="64.5" r="12"/><circle class="d0" style="--d:0.50s" cx="193.5" cy="64.5" r="12"/><circle class="d0" style="--d:0.53s" cx="236.5" cy="64.5" r="12"/><circle class="d0" style="--d:0.56s" cx="279.5" cy="64.5" r="12"/><circle class="d0" style="--d:0.59s" cx="322.5" cy="64.5" r="12"/><circle class="d0 out" style="--d:0.62s" cx="365.5" cy="64.5" r="12"/><circle class="ring" style="--d:1.97s" cx="365.5" cy="64.5" r="11"/><circle class="d0" style="--d:0.65s" cx="408.5" cy="64.5" r="12"/><circle class="d0" style="--d:0.41s" cx="21.5" cy="107.5" r="12"/><circle class="d0" style="--d:0.44s" cx="64.5" cy="107.5" r="12"/><circle class="d0" style="--d:0.47s" cx="107.5" cy="107.5" r="12"/><circle class="d0" style="--d:0.50s" cx="150.5" cy="107.5" r="12"/><circle class="d0" style="--d:0.53s" cx="193.5" cy="107.5" r="12"/><circle class="d0" style="--d:0.56s" cx="236.5" cy="107.5" r="12"/><circle class="d0" style="--d:0.59s" cx="279.5" cy="107.5" r="12"/><circle class="d0 out" style="--d:0.62s" cx="322.5" cy="107.5" r="12"/><circle class="ring" style="--d:1.97s" cx="322.5" cy="107.5" r="11"/><circle class="d0" style="--d:0.65s" cx="365.5" cy="107.5" r="12"/><circle class="d0" style="--d:0.68s" cx="408.5" cy="107.5" r="12"/><circle class="d0" style="--d:0.44s" cx="21.5" cy="150.5" r="12"/><circle class="d0" style="--d:0.47s" cx="64.5" cy="150.5" r="12"/><circle class="d0" style="--d:0.50s" cx="107.5" cy="150.5" r="12"/><circle class="d0" style="--d:0.53s" cx="150.5" cy="150.5" r="12"/><circle class="d0 out" style="--d:0.56s" cx="193.5" cy="150.5" r="12"/><circle class="ring" style="--d:1.91s" cx="193.5" cy="150.5" r="11"/><circle class="d0" style="--d:0.59s" cx="236.5" cy="150.5" r="12"/><circle class="d0" style="--d:0.62s" cx="279.5" cy="150.5" r="12"/><circle class="d0" style="--d:0.65s" cx="322.5" cy="150.5" r="12"/><circle class="d0" style="--d:0.68s" cx="365.5" cy="150.5" r="12"/><circle class="d0" style="--d:0.71s" cx="408.5" cy="150.5" r="12"/><circle class="d0" style="--d:0.47s" cx="21.5" cy="193.5" r="12"/><circle class="d0 out" style="--d:0.50s" cx="64.5" cy="193.5" r="12"/><circle class="ring" style="--d:1.85s" cx="64.5" cy="193.5" r="11"/><circle class="d0" style="--d:0.53s" cx="107.5" cy="193.5" r="12"/><circle class="d0" style="--d:0.56s" cx="150.5" cy="193.5" r="12"/><circle class="d0" style="--d:0.59s" cx="193.5" cy="193.5" r="12"/><circle class="d0" style="--d:0.62s" cx="236.5" cy="193.5" r="12"/><circle class="d0" style="--d:0.65s" cx="279.5" cy="193.5" r="12"/><circle class="d0" style="--d:0.68s" cx="322.5" cy="193.5" r="12"/><circle class="d0" style="--d:0.71s" cx="365.5" cy="193.5" r="12"/><circle class="d0 out" style="--d:0.74s" cx="408.5" cy="193.5" r="12"/><circle class="ring" style="--d:2.09s" cx="408.5" cy="193.5" r="11"/><circle class="d0" style="--d:0.50s" cx="21.5" cy="236.5" r="12"/><circle class="d0" style="--d:0.53s" cx="64.5" cy="236.5" r="12"/><circle class="d0" style="--d:0.56s" cx="107.5" cy="236.5" r="12"/><circle class="d0" style="--d:0.59s" cx="150.5" cy="236.5" r="12"/><circle class="d0" style="--d:0.62s" cx="193.5" cy="236.5" r="12"/><circle class="d0" style="--d:0.65s" cx="236.5" cy="236.5" r="12"/><circle class="d0 out" style="--d:0.68s" cx="279.5" cy="236.5" r="12"/><circle class="ring" style="--d:2.03s" cx="279.5" cy="236.5" r="11"/><circle class="d0" style="--d:0.71s" cx="322.5" cy="236.5" r="12"/><circle class="d0" style="--d:0.74s" cx="365.5" cy="236.5" r="12"/><circle class="d0" style="--d:0.77s" cx="408.5" cy="236.5" r="12"/><circle class="d0" style="--d:0.53s" cx="21.5" cy="279.5" r="12"/><circle class="d0" style="--d:0.56s" cx="64.5" cy="279.5" r="12"/><circle class="d0 out" style="--d:0.59s" cx="107.5" cy="279.5" r="12"/><circle class="ring" style="--d:1.94s" cx="107.5" cy="279.5" r="11"/><circle class="d0" style="--d:0.62s" cx="150.5" cy="279.5" r="12"/><circle class="d0" style="--d:0.65s" cx="193.5" cy="279.5" r="12"/><circle class="d0" style="--d:0.68s" cx="236.5" cy="279.5" r="12"/><circle class="d0" style="--d:0.71s" cx="279.5" cy="279.5" r="12"/><circle class="d0" style="--d:0.74s" cx="322.5" cy="279.5" r="12"/><circle class="d0 out" style="--d:0.77s" cx="365.5" cy="279.5" r="12"/><circle class="ring" style="--d:2.12s" cx="365.5" cy="279.5" r="11"/><circle class="d0" style="--d:0.80s" cx="408.5" cy="279.5" r="12"/><circle class="d0" style="--d:0.56s" cx="21.5" cy="322.5" r="12"/><circle class="d0" style="--d:0.59s" cx="64.5" cy="322.5" r="12"/><circle class="d0" style="--d:0.62s" cx="107.5" cy="322.5" r="12"/><circle class="d0" style="--d:0.65s" cx="150.5" cy="322.5" r="12"/><circle class="d0" style="--d:0.68s" cx="193.5" cy="322.5" r="12"/><circle class="d0 out" style="--d:0.71s" cx="236.5" cy="322.5" r="12"/><circle class="ring" style="--d:2.06s" cx="236.5" cy="322.5" r="11"/><circle class="d0" style="--d:0.74s" cx="279.5" cy="322.5" r="12"/><circle class="d0" style="--d:0.77s" cx="322.5" cy="322.5" r="12"/><circle class="d0" style="--d:0.80s" cx="365.5" cy="322.5" r="12"/><circle class="d0" style="--d:0.83s" cx="408.5" cy="322.5" r="12"/><circle class="d0" style="--d:0.59s" cx="21.5" cy="365.5" r="12"/><circle class="d0 out" style="--d:0.62s" cx="64.5" cy="365.5" r="12"/><circle class="ring" style="--d:1.97s" cx="64.5" cy="365.5" r="11"/><circle class="d0" style="--d:0.65s" cx="107.5" cy="365.5" r="12"/><circle class="d0" style="--d:0.68s" cx="150.5" cy="365.5" r="12"/><circle class="d0" style="--d:0.71s" cx="193.5" cy="365.5" r="12"/><circle class="d0" style="--d:0.74s" cx="236.5" cy="365.5" r="12"/><circle class="d0" style="--d:0.77s" cx="279.5" cy="365.5" r="12"/><circle class="d0 out" style="--d:0.80s" cx="322.5" cy="365.5" r="12"/><circle class="ring" style="--d:2.15s" cx="322.5" cy="365.5" r="11"/><circle class="d0" style="--d:0.83s" cx="365.5" cy="365.5" r="12"/><circle class="d0" style="--d:0.86s" cx="408.5" cy="365.5" r="12"/><circle class="d0" style="--d:0.62s" cx="21.5" cy="408.5" r="12"/><circle class="d0" style="--d:0.65s" cx="64.5" cy="408.5" r="12"/><circle class="d0" style="--d:0.68s" cx="107.5" cy="408.5" r="12"/><circle class="d0 out" style="--d:0.71s" cx="150.5" cy="408.5" r="12"/><circle class="ring" style="--d:2.06s" cx="150.5" cy="408.5" r="11"/><circle class="d0" style="--d:0.74s" cx="193.5" cy="408.5" r="12"/><circle class="d0" style="--d:0.77s" cx="236.5" cy="408.5" r="12"/><circle class="d0" style="--d:0.80s" cx="279.5" cy="408.5" r="12"/><circle class="d0 out" style="--d:0.83s" cx="322.5" cy="408.5" r="12"/><circle class="ring" style="--d:2.18s" cx="322.5" cy="408.5" r="11"/><circle class="d0" style="--d:0.86s" cx="365.5" cy="408.5" r="12"/><circle class="d0" style="--d:0.89s" cx="408.5" cy="408.5" r="12"/><circle class="halo" style="--d:2.75s" cx="365.5" cy="64.5" r="19"/><circle class="keep" style="--d:2.75s" cx="365.5" cy="64.5" r="12"/><circle class="halo" style="--d:2.93s" cx="64.5" cy="193.5" r="19"/><circle class="keep" style="--d:2.93s" cx="64.5" cy="193.5" r="12"/><circle class="halo" style="--d:3.11s" cx="365.5" cy="279.5" r="19"/><circle class="keep" style="--d:3.11s" cx="365.5" cy="279.5" r="12"/></svg>
     <figcaption class="ent" style="--d:3.2s">
       <span><i class="lk ring"></i>De cada 100 clientes, 15 se van al año</span>
-      <span><i class="lk solid"></i>Con el modelo, el banco retiene a casi 4</span>
+      <span><i class="lk solid"></i>Con el modelo, el banco retiene a casi 3</span>
     </figcaption>
   </figure>
 </section>
 <section class="slide L">
   <div class="brand" role="img" aria-label="Universidad de los Andes"><i class="ulogo"></i></div>
   <div class="pad">
-    <div class="kicker ent">Recomendación</div>
-    <h2 class="ent" style="--d:.08s">Recomendamos empezar con un piloto y escalar solo si la oferta convence a <em>más del 15%</em></h2>
-    <div class="next">
-      <div class="nx card hl rv" data-step="0" style="--d:.25s"><div class="top"><span class="n">01</span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 2v7.527a2 2 0 0 1-.211.896L4.72 20.55a1 1 0 0 0 .9 1.45h12.76a1 1 0 0 0 .9-1.45l-5.069-10.127A2 2 0 0 1 14 9.527V2"/> <path d="M8.5 2h7"/> <path d="M7 16h10"/></svg></div>
-        <h3>Piloto con grupo de control</h3>
-        <p>Ofrecer la campaña a una parte de los clientes señalados y dejar a otra parte sin contactar.</p>
-        <div class="owner">Mide <b>cuántos convence la oferta</b></div></div>
-      <div class="nx card rv" data-step="0" style="--d:.38s"><div class="top"><span class="n">02</span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/> <path d="M21 3v5h-5"/> <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/> <path d="M8 16H3v5"/></svg></div>
-        <h3>Reentrenar con datos locales</h3>
-        <p>Validar el modelo con clientes del banco colombiano antes de usarlo a escala.</p>
-        <div class="owner">Mide <b>precisión y recall en Colombia</b></div></div>
-      <div class="nx card rv" data-step="0" style="--d:.51s"><div class="top"><span class="n">03</span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/> <polyline points="16 7 22 7 22 13"/></svg></div>
-        <h3>Escalar con el umbral de 0,30</h3>
-        <p>Contactar a quienes superen esa probabilidad y recalcularla si cambian los costos.</p>
-        <div class="owner">Mide <b>ganancia y churn cada trimestre</b></div></div>
-    </div>
-    <div class="reveal rv" data-step="1"><div class="rl"></div><div class="rt">Regla de decisión: <b>escalar si el piloto muestra una efectividad mayor al 15%</b></div><div class="rl"></div></div>
-  </div>
-  <div class="foot">Por qué: con el modelo, la campaña deja COP 380 M al año y el VPN a 3 años es de COP 508 M. El resultado depende sobre todo de la oferta: si convence a menos del 14,6% de los clientes en riesgo, el modelo no se paga.</div>
-  <div class="pg"><b>1</b> / 14</div>
-</section>
-<section class="slide D">
-  <div class="brand" role="img" aria-label="Universidad de los Andes"><i class="ulogo"></i></div>
-  <div class="btxt">
-    <span class="bey ent">Sección 1 de 3</span>
-    <h1 class="bbig ent" style="--d:.08s">El problema y los datos</h1>
-  </div>
-  <div class="pg"><b>2</b> / 14</div>
-</section>
-<section class="slide L">
-  <div class="brand" role="img" aria-label="Universidad de los Andes"><i class="ulogo"></i></div>
-  <div class="pad">
-    <div class="kicker ent">01 · El problema y los datos</div>
-    <h2 class="ent" style="--d:.08s">En un país casi todo bancarizado, crecer depende de <em>no perder clientes</em></h2>
+    <h2 class="ent" style="--d:.08s">Un banco promedio pierde 3.000 clientes al año, pero no sabe <em>cuáles van a ser</em></h2>
     <div class="kpis">
       <div class="kpi card rv" data-step="0" style="--d:.25s">
-        <div class="v"><span data-count="96.5" data-dec="1">96,5</span>%<sup>1</sup></div>
-        <div class="l">de los adultos ya tiene un producto financiero</div>
-        <p>En 2025, 37,9 millones de colombianos tenían al menos un producto de depósito.</p>
-        <div class="meter"><i style="width:96.5%"></i></div>
-      </div>
-      <div class="kpi card rv" data-step="0" style="--d:.38s">
-        <div class="v"><span data-count="3000" data-dec="0" data-miles="1">3.000</span><sup>2</sup></div>
+        <div class="v"><span data-count="3000" data-dec="0" data-miles="1">3.000</span></div>
         <div class="l">clientes se van cada año</div>
-        <p>En un banco promedio de 20.000 clientes con 15% de churn anual.</p>
+        <p>Es el 15% de un banco de 20.000 clientes.</p>
         <div class="meter"><i style="width:15%"></i></div>
       </div>
-      <div class="kpi card hl rv" data-step="0" style="--d:.51s">
-        <div class="v"><small>COP</small><span data-count="2718" data-dec="0" data-miles="1">2.718</span> M<sup>3</sup></div>
-        <div class="l">en valor se pierden al año</div>
-        <p>Cada cliente que se va deja de aportar unos COP 0,91 M de margen.</p>
+      <div class="kpi card hl rv" data-step="0" style="--d:.38s">
+        <div class="v"><small>COP</small><span data-count="2100" data-dec="0" data-miles="1">2.100</span> M</div>
+        <div class="l">en ingresos se pierden al año</div>
+        <p>Cada cliente que se va deja de aportar unos COP 700.000 al año.</p>
+      </div>
+      <div class="kpi card rv" data-step="0" style="--d:.51s">
+        <div class="v"><span data-count="10000" data-dec="0" data-miles="1">10.000</span></div>
+        <div class="l">clientes europeos usamos para entrenar el modelo</div>
+        <p>Son clientes de Francia, Alemania y España, y el 20,4% de ellos abandonó el banco.</p>
+        <div class="meter"><i style="width:20.4%"></i></div>
       </div>
     </div>
   </div>
   <div class="foot rv" data-step="1">
-    <sup>1</sup>Superintendencia Financiera de Colombia, citada en el enunciado del taller. <sup>2</sup>Tasa de deserción de entidades financieras minoristas del enunciado (15%).<br>
-    <sup>3</sup>Valor de vida del cliente con margen de 35% y tasa de descuento de 16,5%, estimado en el notebook 3.
+    El enunciado da un churn de 15% al año y un ingreso de COP 500.000 a 900.000 por cliente. Usamos el punto medio, COP 700.000.
   </div>
-  <div class="pg"><b>3</b> / 14</div>
+  <div class="pg"><b>1</b> / 9</div>
 </section>
 <section class="slide L">
   <div class="brand" role="img" aria-label="Universidad de los Andes"><i class="ulogo"></i></div>
   <div class="pad">
-    <div class="kicker ent">01 · El problema y los datos</div>
-    <h2 class="ent" style="--d:.08s">Entrenamos con 10.000 clientes europeos y llevamos el resultado a <em>un banco colombiano</em></h2>
-    <div class="flow">
-      <div class="fstep card rv" data-step="0" style="--d:.25s"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/> <path d="M3 5V19A9 3 0 0 0 21 19V5"/> <path d="M3 12A9 3 0 0 0 21 12"/></svg>
-        <div class="t"><span class="n0">01</span>Datos</div>
-        <div class="fig">10.000</div><p>clientes de Francia, Alemania y España; el 20,4% abandonó el banco.</p></div>
-      <div class="fx rv" data-step="0" style="--d:.35s"><svg viewBox="0 0 32 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 6h27"/><path d="m24 1 5 5-5 5"/></svg></div>
-      <div class="fstep card rv" data-step="0" style="--d:.45s"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 16 6-12 6 12"/> <path d="M8 12h8"/> <path d="m16 20 2 2 4-4"/></svg>
-        <div class="t"><span class="n0">02</span>Limpieza</div>
-        <div class="fig">45</div><p>filas duplicadas eliminadas; además, faltantes, categorías y valores imposibles corregidos.</p></div>
-      <div class="fx rv" data-step="0" style="--d:.55s"><svg viewBox="0 0 32 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 6h27"/><path d="m24 1 5 5-5 5"/></svg></div>
-      <div class="fstep card rv" data-step="0" style="--d:.65s"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 3h5v5"/> <path d="M8 3H3v5"/> <path d="M12 22v-8.3a4 4 0 0 0-1.172-2.872L3 3"/> <path d="m15 9 6-6"/></svg>
-        <div class="t"><span class="n0">03</span>Modelos</div>
-        <div class="fig">3</div><p>algoritmos comparados con datos separados 60/20/20 y pruebas estadísticas.</p></div>
-      <div class="fx rv" data-step="0" style="--d:.75s"><svg viewBox="0 0 32 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 6h27"/><path d="m24 1 5 5-5 5"/></svg></div>
-      <div class="fstep card hl rv" data-step="0" style="--d:.85s"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"/> <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"/></svg>
-        <div class="t"><span class="n0">04</span>Valor</div>
-        <div class="fig">20.000</div><p>clientes de un banco colombiano, con costos e ingresos que tienen fuente.</p></div>
-    </div>
-  </div>
-  <div class="pg"><b>4</b> / 14</div>
-</section>
-<section class="slide L">
-  <div class="brand" role="img" aria-label="Universidad de los Andes"><i class="ulogo"></i></div>
-  <div class="pad">
-    <div class="kicker ent">01 · El problema y los datos</div>
     <h2 class="ent" style="--d:.08s">La edad y el número de productos separan a <em>quien se va</em> de quien se queda</h2>
     <div class="two">
-      <div class="chartc card rv" data-step="0" style="--d:.2s"><h3>Abandono por edad <span>(años)</span></h3><svg class="chart" viewBox="0 0 606 300" width="606" height="300" role="img"><line x1="50" x2="600" y1="240.0" y2="240.0" class="axis"/><text x="38" y="245.0" class="ax" text-anchor="end">0%</text><line x1="50" x2="600" y1="188.5" y2="188.5" class="grid"/><text x="38" y="193.5" class="ax" text-anchor="end">25%</text><line x1="50" x2="600" y1="137.0" y2="137.0" class="grid"/><text x="38" y="142.0" class="ax" text-anchor="end">50%</text><line x1="50" x2="600" y1="85.5" y2="85.5" class="grid"/><text x="38" y="90.5" class="ax" text-anchor="end">75%</text><line x1="50" x2="600" y1="34.0" y2="34.0" class="grid"/><text x="38" y="39.0" class="ax" text-anchor="end">100%</text><line class="avg" x1="50" x2="600" y1="198.0" y2="198.0"/><rect class="bar grow" style="--d:0.25s" x="74.2" y="224.1" width="61.6" height="15.9" rx="4"><title>18-30: 7,7% (1.910 clientes)</title></rect><text class="val halo fadein" style="--d:0.95s" x="105.0" y="214.1" text-anchor="middle">7,7%</text><text class="cat" x="105.0" y="268.0" text-anchor="middle">18-30</text><rect class="bar grow" style="--d:0.35s" x="184.2" y="214.7" width="61.6" height="25.3" rx="4"><title>31-40: 12,3% (4.304 clientes)</title></rect><text class="val halo fadein" style="--d:1.05s" x="215.0" y="204.7" text-anchor="middle">12,3%</text><text class="cat" x="215.0" y="268.0" text-anchor="middle">31-40</text><rect class="bar grow" style="--d:0.45s" x="294.2" y="170.4" width="61.6" height="69.6" rx="4"><title>41-50: 33,8% (2.252 clientes)</title></rect><text class="val halo fadein" style="--d:1.15s" x="325.0" y="160.4" text-anchor="middle">33,8%</text><text class="cat" x="325.0" y="268.0" text-anchor="middle">41-50</text><rect class="bar hl grow" style="--d:0.55s" x="404.2" y="124.6" width="61.6" height="115.4" rx="4"><title>51-60: 56,0% (782 clientes)</title></rect><text class="val halo fadein hl" style="--d:1.25s" x="435.0" y="114.6" text-anchor="middle">56,0%</text><text class="cat" x="435.0" y="268.0" text-anchor="middle">51-60</text><rect class="bar grow" style="--d:0.65s" x="514.2" y="189.1" width="61.6" height="50.9" rx="4"><title>61+: 24,7% (446 clientes)</title></rect><text class="val halo fadein" style="--d:1.35s" x="545.0" y="179.1" text-anchor="middle">24,7%</text><text class="cat" x="545.0" y="268.0" text-anchor="middle">61+</text></svg></div>
-      <div class="chartc card rv" data-step="0" style="--d:.32s"><h3>Abandono por número de productos</h3><svg class="chart" viewBox="0 0 606 300" width="606" height="300" role="img"><line x1="50" x2="600" y1="240.0" y2="240.0" class="axis"/><text x="38" y="245.0" class="ax" text-anchor="end">0%</text><line x1="50" x2="600" y1="188.5" y2="188.5" class="grid"/><text x="38" y="193.5" class="ax" text-anchor="end">25%</text><line x1="50" x2="600" y1="137.0" y2="137.0" class="grid"/><text x="38" y="142.0" class="ax" text-anchor="end">50%</text><line x1="50" x2="600" y1="85.5" y2="85.5" class="grid"/><text x="38" y="90.5" class="ax" text-anchor="end">75%</text><line x1="50" x2="600" y1="34.0" y2="34.0" class="grid"/><text x="38" y="39.0" class="ax" text-anchor="end">100%</text><line class="avg" x1="50" x2="600" y1="198.0" y2="198.0"/><rect class="bar grow" style="--d:0.25s" x="80.2" y="182.9" width="77.0" height="57.1" rx="4"><title>1: 27,7% (5.084 clientes)</title></rect><text class="val halo fadein" style="--d:0.95s" x="118.8" y="172.9" text-anchor="middle">27,7%</text><text class="cat" x="118.8" y="268.0" text-anchor="middle">1</text><rect class="bar grow" style="--d:0.35s" x="217.8" y="224.3" width="77.0" height="15.7" rx="4"><title>2: 7,6% (4.590 clientes)</title></rect><text class="val halo fadein" style="--d:1.05s" x="256.2" y="214.3" text-anchor="middle">7,6%</text><text class="cat" x="256.2" y="268.0" text-anchor="middle">2</text><rect class="bar hl grow" style="--d:0.45s" x="355.2" y="69.6" width="77.0" height="170.4" rx="4"><title>3: 82,7% (266 clientes)</title></rect><text class="val halo fadein hl" style="--d:1.15s" x="393.8" y="59.6" text-anchor="middle">82,7%</text><text class="cat" x="393.8" y="268.0" text-anchor="middle">3</text><text class="ax" x="393.8" y="292.0" text-anchor="middle">266 clientes</text><rect class="bar hl grow" style="--d:0.55s" x="492.8" y="34.0" width="77.0" height="206.0" rx="4"><title>4: 100% (60 clientes)</title></rect><text class="val halo fadein hl" style="--d:1.25s" x="531.2" y="24.0" text-anchor="middle">100%</text><text class="cat" x="531.2" y="268.0" text-anchor="middle">4</text><text class="ax" x="531.2" y="292.0" text-anchor="middle">60 clientes</text></svg></div>
+      <div class="chartc card rv" data-step="0" style="--d:.2s"><h3>Abandono por edad <span>(años)</span></h3><svg class="chart" viewBox="0 0 606 300" width="606" height="300" role="img"><path class="bar  grow" style="--d:0.25s" d="M52.0,240.0 V230.6 A6,6 0 0 1 58.0,224.6 H90.0 A6,6 0 0 1 96.0,230.6 V240.0 Z"><title>18-30: 7,7% (1.910 clientes)</title></path><text class="val halo fadein" style="--d:0.95s" x="74.0" y="214.6" text-anchor="middle">7,7%</text><text class="cat" x="74.0" y="268" text-anchor="middle">18-30</text><path class="bar  grow" style="--d:0.35s" d="M168.0,240.0 V221.4 A6,6 0 0 1 174.0,215.4 H206.0 A6,6 0 0 1 212.0,221.4 V240.0 Z"><title>31-40: 12,3% (4.304 clientes)</title></path><text class="val halo fadein" style="--d:1.05s" x="190.0" y="205.4" text-anchor="middle">12,3%</text><text class="cat" x="190.0" y="268" text-anchor="middle">31-40</text><path class="bar  grow" style="--d:0.45s" d="M284.0,240.0 V178.4 A6,6 0 0 1 290.0,172.4 H322.0 A6,6 0 0 1 328.0,178.4 V240.0 Z"><title>41-50: 33,8% (2.252 clientes)</title></path><text class="val halo fadein" style="--d:1.15s" x="306.0" y="162.4" text-anchor="middle">33,8%</text><text class="cat" x="306.0" y="268" text-anchor="middle">41-50</text><path class="bar hl grow" style="--d:0.55s" d="M400.0,240.0 V134.0 A6,6 0 0 1 406.0,128.0 H438.0 A6,6 0 0 1 444.0,134.0 V240.0 Z"><title>51-60: 56,0% (782 clientes)</title></path><text class="val halo fadein hl" style="--d:1.25s" x="422.0" y="118.0" text-anchor="middle">56,0%</text><text class="cat" x="422.0" y="268" text-anchor="middle">51-60</text><path class="bar  grow" style="--d:0.65s" d="M516.0,240.0 V196.6 A6,6 0 0 1 522.0,190.6 H554.0 A6,6 0 0 1 560.0,196.6 V240.0 Z"><title>61+: 24,7% (446 clientes)</title></path><text class="val halo fadein" style="--d:1.35s" x="538.0" y="180.6" text-anchor="middle">24,7%</text><text class="cat" x="538.0" y="268" text-anchor="middle">61+</text><line class="axis" x1="16" x2="596" y1="240" y2="240"/></svg></div>
+      <div class="chartc card rv" data-step="0" style="--d:.32s"><h3>Abandono por número de productos</h3><svg class="chart" viewBox="0 0 606 300" width="606" height="300" role="img"><path class="bar  grow" style="--d:0.25s" d="M66.5,240.0 V190.6 A6,6 0 0 1 72.5,184.6 H104.5 A6,6 0 0 1 110.5,190.6 V240.0 Z"><title>1: 27,7% (5.084 clientes)</title></path><text class="val halo fadein" style="--d:0.95s" x="88.5" y="174.6" text-anchor="middle">27,7%</text><text class="cat" x="88.5" y="268" text-anchor="middle">1</text><path class="bar  grow" style="--d:0.35s" d="M211.5,240.0 V230.8 A6,6 0 0 1 217.5,224.8 H249.5 A6,6 0 0 1 255.5,230.8 V240.0 Z"><title>2: 7,6% (4.590 clientes)</title></path><text class="val halo fadein" style="--d:1.05s" x="233.5" y="214.8" text-anchor="middle">7,6%</text><text class="cat" x="233.5" y="268" text-anchor="middle">2</text><path class="bar hl grow" style="--d:0.45s" d="M356.5,240.0 V80.6 A6,6 0 0 1 362.5,74.6 H394.5 A6,6 0 0 1 400.5,80.6 V240.0 Z"><title>3: 82,7% (266 clientes)</title></path><text class="val halo fadein hl" style="--d:1.15s" x="378.5" y="64.6" text-anchor="middle">82,7%</text><text class="cat" x="378.5" y="268" text-anchor="middle">3</text><text class="ax" x="378.5" y="291" text-anchor="middle">266 clientes</text><path class="bar hl grow" style="--d:0.55s" d="M501.5,240.0 V46.0 A6,6 0 0 1 507.5,40.0 H539.5 A6,6 0 0 1 545.5,46.0 V240.0 Z"><title>4: 100% (60 clientes)</title></path><text class="val halo fadein hl" style="--d:1.25s" x="523.5" y="30.0" text-anchor="middle">100%</text><text class="cat" x="523.5" y="268" text-anchor="middle">4</text><text class="ax" x="523.5" y="291" text-anchor="middle">60 clientes</text><line class="axis" x1="16" x2="596" y1="240" y2="240"/></svg></div>
     </div>
     <div class="trio rv" data-step="1">
-      <div><span>Actividad</span><b>26,9%</b> de los inactivos se va, frente a 14,3% de los activos</div>
-      <div><span>País</span><b>32,4%</b> en Alemania, el doble que en Francia y España</div>
-      <div><span>Perfil de mayor riesgo</span><b>0,86</b> de riesgo da el modelo a los inactivos de 55 a 65 años</div>
+      <div><b>26,9%</b> de los clientes inactivos se va, mientras que de los activos se va el 14,3%</div>
+      <div><b>32,4%</b> de los clientes de Alemania se va, el doble que en Francia y España</div>
+      <div><b>0,86</b> es la probabilidad de irse que el modelo le da a un cliente inactivo de 55 a 65 años</div>
     </div>
   </div>
-  <div class="foot rv" data-step="0" style="--d:.6s">Muestra de 10.000 clientes. La línea punteada es la tasa promedio de abandono, 20,4%.</div>
-  <div class="pg"><b>5</b> / 14</div>
-</section>
-<section class="slide D">
-  <div class="brand" role="img" aria-label="Universidad de los Andes"><i class="ulogo"></i></div>
-  <div class="btxt">
-    <span class="bey ent">Sección 2 de 3</span>
-    <h1 class="bbig ent" style="--d:.08s">El modelo</h1>
-  </div>
-  <div class="pg"><b>6</b> / 14</div>
+  <div class="foot rv" data-step="0" style="--d:.6s">Los datos son de 10.000 clientes. En promedio, el 20,4% abandona el banco.</div>
+  <div class="pg"><b>2</b> / 9</div>
 </section>
 <section class="slide L">
   <div class="brand" role="img" aria-label="Universidad de los Andes"><i class="ulogo"></i></div>
   <div class="pad">
-    <div class="kicker ent">02 · El modelo</div>
     <h2 class="ent" style="--d:.08s">El modelo encuentra a <em>6 de cada 10</em> clientes que se van y acierta 2 de cada 3 alertas</h2>
     <div class="kpis">
       <div class="kpi card hl rv" data-step="0" style="--d:.25s">
         <div class="v"><span data-count="60" data-dec="0">60</span>%</div>
-        <div class="l">de los que se van son detectados</div>
-        <p>Recall del Random Forest en el conjunto de prueba.</p>
+        <div class="l">de los clientes que se van reciben una alerta</div>
+        <p>Es el recall del Random Forest en el conjunto de prueba.</p>
         <div class="meter"><i style="width:60%"></i></div>
       </div>
       <div class="kpi card rv" data-step="0" style="--d:.38s">
         <div class="v"><span data-count="68" data-dec="0">68</span>%</div>
         <div class="l">de las alertas son correctas</div>
-        <p>Precisión con el umbral de 0,5. Al azar sería 20%.</p>
+        <p>Es la precisión con umbral de 0,5. Si escogiéramos clientes al azar, acertaríamos el 20% de las veces.</p>
         <div class="meter"><i style="width:68%"></i></div>
       </div>
       <div class="kpi card rv" data-step="0" style="--d:.51s">
         <div class="v"><span data-count="0.87" data-dec="2">0,87</span></div>
-        <div class="l">ROC-AUC: ordena bien el riesgo</div>
-        <p>Igual que el Gradient Boosting y por encima de la regresión logística (0,76-0,84).</p>
+        <div class="l">de ROC-AUC, que mide qué tan bien ordena a los clientes por riesgo</div>
+        <p>El Gradient Boosting obtuvo lo mismo, y la regresión logística obtuvo entre 0,76 y 0,84.</p>
         <div class="meter"><i style="width:87%"></i></div>
       </div>
     </div>
   </div>
-  <div class="foot rv" data-step="1">2.000 clientes de prueba con 20% de churn y umbral de 0,5. F1 de 0,637. En el banco, con 15% de churn y el umbral de 0,30, la precisión es de 34%.</div>
-  <div class="pg"><b>7</b> / 14</div>
+  <div class="foot rv" data-step="1">Comparamos regresión logística, Random Forest y Gradient Boosting, y elegimos el Random Forest. Medimos estos resultados en 2.000 clientes de prueba con umbral de 0,5, y el F1 fue 0,637. En un banco con 15% de churn, la precisión baja a 59%.</div>
+  <div class="pg"><b>3</b> / 9</div>
 </section>
 <section class="slide L">
   <div class="brand" role="img" aria-label="Universidad de los Andes"><i class="ulogo"></i></div>
   <div class="pad">
-    <div class="kicker ent">02 · El modelo</div>
     <h2 class="ent" style="--d:.08s">La edad y el número de productos explican <em>más de la mitad</em> de las decisiones del modelo</h2>
     <div class="split">
-      <div class="chartc card rv" data-step="0" style="--d:.2s"><h3>Peso de cada variable <span>(% del valor SHAP absoluto promedio)</span></h3><svg class="chart" viewBox="0 0 852 400" width="852" height="400" role="img"><text class="cat hl" x="198" y="26.0" text-anchor="end">Edad</text><rect class="bar hl growx" style="--d:0.20s" x="214" y="7.0" width="540.0" height="26" rx="4"><title>Edad: 30,6%</title></rect><text class="val fadein hl" style="--d:1.00s" x="766.0" y="26.0">30,6%</text><text class="cat hl" x="198" y="66.0" text-anchor="end">Número de productos</text><rect class="bar hl growx" style="--d:0.27s" x="214" y="47.0" width="391.8" height="26" rx="4"><title>Número de productos: 22,2%</title></rect><text class="val fadein hl" style="--d:1.07s" x="617.8" y="66.0">22,2%</text><text class="cat" x="198" y="106.0" text-anchor="end">Miembro activo</text><rect class="bar growx" style="--d:0.34s" x="214" y="87.0" width="236.5" height="26" rx="4"><title>Miembro activo: 13,4%</title></rect><text class="val fadein" style="--d:1.14s" x="462.5" y="106.0">13,4%</text><text class="cat" x="198" y="146.0" text-anchor="end">Vive en Alemania</text><rect class="bar growx" style="--d:0.41s" x="214" y="127.0" width="121.8" height="26" rx="4"><title>Vive en Alemania: 6,9%</title></rect><text class="val fadein" style="--d:1.21s" x="347.8" y="146.0">6,9%</text><text class="cat" x="198" y="186.0" text-anchor="end">Saldo</text><rect class="bar growx" style="--d:0.48s" x="214" y="167.0" width="120.0" height="26" rx="4"><title>Saldo: 6,8%</title></rect><text class="val fadein" style="--d:1.28s" x="346.0" y="186.0">6,8%</text><text class="cat" x="198" y="226.0" text-anchor="end">Género</text><rect class="bar growx" style="--d:0.55s" x="214" y="207.0" width="116.5" height="26" rx="4"><title>Género: 6,6%</title></rect><text class="val fadein" style="--d:1.35s" x="342.5" y="226.0">6,6%</text><text class="cat" x="198" y="266.0" text-anchor="end">Salario estimado</text><rect class="bar growx" style="--d:0.62s" x="214" y="247.0" width="77.6" height="26" rx="4"><title>Salario estimado: 4,4%</title></rect><text class="val fadein" style="--d:1.42s" x="303.6" y="266.0">4,4%</text><text class="cat" x="198" y="306.0" text-anchor="end">Puntaje crediticio</text><rect class="bar growx" style="--d:0.69s" x="214" y="287.0" width="68.8" height="26" rx="4"><title>Puntaje crediticio: 3,9%</title></rect><text class="val fadein" style="--d:1.49s" x="294.8" y="306.0">3,9%</text><text class="cat" x="198" y="346.0" text-anchor="end">Antigüedad</text><rect class="bar growx" style="--d:0.76s" x="214" y="327.0" width="40.6" height="26" rx="4"><title>Antigüedad: 2,3%</title></rect><text class="val fadein" style="--d:1.56s" x="266.6" y="346.0">2,3%</text><text class="cat" x="198" y="386.0" text-anchor="end">Otras</text><rect class="bar mute growx" style="--d:0.83s" x="214" y="367.0" width="49.4" height="26" rx="4"><title>Otras: 2,8%</title></rect><text class="val fadein" style="--d:1.63s" x="275.4" y="386.0">2,8%</text><line class="axis" x1="214" x2="214" y1="2" y2="398"/></svg></div>
+      <div class="chartc card rv" data-step="0" style="--d:.2s"><h3>Peso de cada variable <span>(% del valor SHAP absoluto promedio)</span></h3><svg class="chart" viewBox="0 0 852 400" width="852" height="400" role="img"><text class="cat hl" x="198" y="26.0" text-anchor="end">Edad</text><path class="bar hl growx" style="--d:0.20s" d="M214.0,9.0 H748.0 A6,6 0 0 1 754.0,15.0 V25.0 A6,6 0 0 1 748.0,31.0 H214.0 Z"><title>Edad: 30,6%</title></path><text class="val fadein hl" style="--d:1.00s" x="764.0" y="26.0">30,6%</text><text class="cat hl" x="198" y="66.0" text-anchor="end">Número de productos</text><path class="bar hl growx" style="--d:0.27s" d="M214.0,49.0 H599.8 A6,6 0 0 1 605.8,55.0 V65.0 A6,6 0 0 1 599.8,71.0 H214.0 Z"><title>Número de productos: 22,2%</title></path><text class="val fadein hl" style="--d:1.07s" x="615.8" y="66.0">22,2%</text><text class="cat" x="198" y="106.0" text-anchor="end">Miembro activo</text><path class="bar  growx" style="--d:0.34s" d="M214.0,89.0 H444.5 A6,6 0 0 1 450.5,95.0 V105.0 A6,6 0 0 1 444.5,111.0 H214.0 Z"><title>Miembro activo: 13,4%</title></path><text class="val fadein" style="--d:1.14s" x="460.5" y="106.0">13,4%</text><text class="cat" x="198" y="146.0" text-anchor="end">Vive en Alemania</text><path class="bar  growx" style="--d:0.41s" d="M214.0,129.0 H329.8 A6,6 0 0 1 335.8,135.0 V145.0 A6,6 0 0 1 329.8,151.0 H214.0 Z"><title>Vive en Alemania: 6,9%</title></path><text class="val fadein" style="--d:1.21s" x="345.8" y="146.0">6,9%</text><text class="cat" x="198" y="186.0" text-anchor="end">Saldo</text><path class="bar  growx" style="--d:0.48s" d="M214.0,169.0 H328.0 A6,6 0 0 1 334.0,175.0 V185.0 A6,6 0 0 1 328.0,191.0 H214.0 Z"><title>Saldo: 6,8%</title></path><text class="val fadein" style="--d:1.28s" x="344.0" y="186.0">6,8%</text><text class="cat" x="198" y="226.0" text-anchor="end">Género</text><path class="bar  growx" style="--d:0.55s" d="M214.0,209.0 H324.5 A6,6 0 0 1 330.5,215.0 V225.0 A6,6 0 0 1 324.5,231.0 H214.0 Z"><title>Género: 6,6%</title></path><text class="val fadein" style="--d:1.35s" x="340.5" y="226.0">6,6%</text><text class="cat" x="198" y="266.0" text-anchor="end">Salario estimado</text><path class="bar  growx" style="--d:0.62s" d="M214.0,249.0 H285.6 A6,6 0 0 1 291.6,255.0 V265.0 A6,6 0 0 1 285.6,271.0 H214.0 Z"><title>Salario estimado: 4,4%</title></path><text class="val fadein" style="--d:1.42s" x="301.6" y="266.0">4,4%</text><text class="cat" x="198" y="306.0" text-anchor="end">Puntaje crediticio</text><path class="bar  growx" style="--d:0.69s" d="M214.0,289.0 H276.8 A6,6 0 0 1 282.8,295.0 V305.0 A6,6 0 0 1 276.8,311.0 H214.0 Z"><title>Puntaje crediticio: 3,9%</title></path><text class="val fadein" style="--d:1.49s" x="292.8" y="306.0">3,9%</text><text class="cat" x="198" y="346.0" text-anchor="end">Antigüedad</text><path class="bar  growx" style="--d:0.76s" d="M214.0,329.0 H248.6 A6,6 0 0 1 254.6,335.0 V345.0 A6,6 0 0 1 248.6,351.0 H214.0 Z"><title>Antigüedad: 2,3%</title></path><text class="val fadein" style="--d:1.56s" x="264.6" y="346.0">2,3%</text><text class="cat" x="198" y="386.0" text-anchor="end">Otras</text><path class="bar mute growx" style="--d:0.83s" d="M214.0,369.0 H257.4 A6,6 0 0 1 263.4,375.0 V385.0 A6,6 0 0 1 257.4,391.0 H214.0 Z"><title>Otras: 2,8%</title></path><text class="val fadein" style="--d:1.63s" x="273.4" y="386.0">2,8%</text><line class="axis" x1="214" x2="214" y1="2" y2="398"/></svg></div>
       <div class="note card hl rv" data-step="1"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/> <circle cx="12" cy="12" r="6"/> <circle cx="12" cy="12" r="2"/></svg>
-        <h3>Qué significa para el banco</h3>
-        <p>El modelo confirma lo que muestran los datos: el riesgo sube con <b>la edad</b>, <b>la inactividad</b> y tener <b>un solo producto o más de dos</b>.</p>
-        <p>Ofertas como invitar a un segundo producto o reactivar al cliente son <b>hipótesis para el piloto</b>: SHAP muestra asociación, no causa.</p>
+        <h3>A quién buscar y qué ofrecerle</h3>
+        <p>El modelo aprendió lo mismo que vimos en los datos: un cliente tiene más riesgo de irse si <b>tiene entre 41 y 60 años</b>, si <b>está inactivo</b> o si tiene <b>un solo producto o más de dos</b>.</p>
+        <p>Con esto, la campaña puede probar dos ofertas: <b>un segundo producto</b> para quien tiene uno solo y <b>un incentivo</b> para que los clientes inactivos vuelvan a usar su cuenta.</p>
       </div>
     </div>
   </div>
-  <div class="pg"><b>8</b> / 14</div>
-</section>
-<section class="slide D">
-  <div class="brand" role="img" aria-label="Universidad de los Andes"><i class="ulogo"></i></div>
-  <div class="btxt">
-    <span class="bey ent">Sección 3 de 3</span>
-    <h1 class="bbig ent" style="--d:.08s">El valor para el banco</h1>
-  </div>
-  <div class="pg"><b>9</b> / 14</div>
+  <div class="pg"><b>4</b> / 9</div>
 </section>
 <section class="slide L">
   <div class="brand" role="img" aria-label="Universidad de los Andes"><i class="ulogo"></i></div>
   <div class="pad">
-    <div class="kicker ent">03 · El valor para el banco</div>
-    <h2 class="ent" style="--d:.08s">Con el modelo, el banco gana <em>COP 380 M al año</em>; contactando a todos, casi nada</h2>
+    <h2 class="ent" style="--d:.08s">Con el modelo, el banco gana <em>COP 254 M al año</em>. Si contacta a todos, pierde COP 170 M</h2>
     <div class="split">
-      <div class="chartc card rv" data-step="0" style="--d:.2s"><h3>Ganancia anual de la campaña <span>(banco de 20.000 clientes)</span></h3><svg class="chart" viewBox="0 0 852 360" width="852" height="360" role="img"><text class="cat" x="232" y="46.0" text-anchor="end">Sin campaña</text><text class="ax" x="232" y="69.0" text-anchor="end">Sin contactos</text><text class="val big fadein" style="--d:1.05s" x="266.0" y="53.0">COP 0 M</text><text class="cat" x="232" y="136.0" text-anchor="end">Contactar a todos</text><text class="ax" x="232" y="159.0" text-anchor="end">20.000 contactos</text><rect class="bar growx" style="--d:0.40s" x="250" y="114.0" width="17.9" height="42" rx="4"><title>Contactar a todos: COP 15,5 M al año</title></rect><text class="val big fadein" style="--d:1.20s" x="283.9" y="143.0">COP 15,5 M</text><text class="cat" x="232" y="226.0" text-anchor="end">Modelo, umbral 0,5</text><text class="ax" x="232" y="249.0" text-anchor="end">3.050 contactos</text><rect class="bar growx" style="--d:0.55s" x="250" y="204.0" width="422.1" height="42" rx="4"><title>Modelo, umbral 0,5: COP 365 M al año</title></rect><text class="val big fadein" style="--d:1.35s" x="688.1" y="233.0">COP 365 M</text><text class="cat hl" x="232" y="316.0" text-anchor="end">Modelo, umbral 0,30</text><text class="ax" x="232" y="339.0" text-anchor="end">7.121 contactos</text><rect class="bar hl growx" style="--d:0.70s" x="250" y="294.0" width="440.0" height="42" rx="4"><title>Modelo, umbral 0,30: COP 380 M al año</title></rect><text class="val big fadein hl" style="--d:1.50s" x="706.0" y="323.0">COP 380 M</text><line class="axis" x1="250" x2="250" y1="6" y2="354"/></svg></div>
+      <div class="chartc card rv" data-step="0" style="--d:.2s"><h3>Ganancia anual de la campaña <span>(banco de 20.000 clientes)</span></h3><svg class="chart" viewBox="0 0 852 270" width="852" height="270" role="img" aria-label="Ganancia anual: sin campaña 0, contactar a todos pierde 170 millones y el modelo gana 254 millones"><text class="cat" x="232" y="43.0" text-anchor="end">Sin campaña</text><text class="ax" x="232" y="65.0" text-anchor="end">Sin contactos</text><text class="val big fadein" style="--d:1.20s" x="452.4" y="52.0">COP 0 M</text><text class="cat" x="232" y="131.0" text-anchor="end">Contactar a todos</text><text class="ax" x="232" y="153.0" text-anchor="end">20.000 contactos</text><path class="bar bad growx r" style="--d:0.55s" d="M438.4,118.0 H255.9 A6,6 0 0 0 249.9,124.0 V142.0 A6,6 0 0 0 255.9,148.0 H438.4 Z"><title>Contactar a todos: −COP 170 M al año</title></path><text class="val big fadein" style="--d:1.35s" x="452.4" y="140.0">−COP 170 M</text><text class="cat hl" x="232" y="219.0" text-anchor="end">Modelo, umbral 0,5</text><text class="ax" x="232" y="241.0" text-anchor="end">3.050 contactos</text><path class="bar hl growx" style="--d:0.70s" d="M438.4,206.0 H714.0 A6,6 0 0 1 720.0,212.0 V230.0 A6,6 0 0 1 714.0,236.0 H438.4 Z"><title>Modelo, umbral 0,5: COP 254 M al año</title></path><text class="val big fadein hl" style="--d:1.50s" x="734.0" y="228.0">COP 254 M</text><line class="axis" x1="438.4" x2="438.4" y1="6" y2="264"/></svg></div>
       <div class="stack">
-        <div class="mini card rv" data-step="1" style="--d:0s"><div class="v"><span data-count="734" data-dec="0">734</span></div><p>clientes retenidos al año</p></div>
-        <div class="mini card rv" data-step="1" style="--d:.12s"><div class="v">15% <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg> 11,3%</div><p>baja la tasa de churn del banco</p></div>
-        <div class="mini card hl rv" data-step="1" style="--d:.24s"><div class="v"><small>COP</small><span data-count="19018" data-dec="0" data-miles="1">19.018</span></div><p>de ganancia por cada cliente que el modelo evalúa</p></div>
+        <div class="mini card rv" data-step="1" style="--d:0s"><div class="v"><span data-count="537" data-dec="0">537</span></div><p>clientes se quedan cada año gracias a la campaña</p></div>
+        <div class="mini card rv" data-step="1" style="--d:.12s"><div class="v">15% <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg> 12,3%</div><p>baja el churn anual del banco</p></div>
+        <div class="mini card hl rv" data-step="1" style="--d:.24s"><div class="v"><small>COP</small><span data-count="12706" data-dec="0" data-miles="1">12.706</span></div><p>gana el banco por cada cliente que el modelo evalúa</p></div>
       </div>
     </div>
   </div>
-  <div class="foot rv" data-step="1">Conjunto de prueba. Intervalo de 95%: COP 349-410 M al año. Ganancia de la campaña, antes de los costos del modelo. La diferencia entre 0,30 y 0,5 no es concluyente.</div>
-  <div class="pg"><b>10</b> / 14</div>
+  <div class="foot rv" data-step="1">Lo calculamos con los 2.000 clientes de prueba y el umbral de 0,5, que elegimos en validación. Con 95% de confianza, la ganancia está entre COP 228 y 280 M al año. A esta cifra todavía no le restamos la inversión ni lo que cuesta operar el modelo.</div>
+  <div class="pg"><b>5</b> / 9</div>
 </section>
 <section class="slide L">
   <div class="brand" role="img" aria-label="Universidad de los Andes"><i class="ulogo"></i></div>
   <div class="pad">
-    <div class="kicker ent">03 · El valor para el banco</div>
-    <h2 class="ent" style="--d:.08s">El modelo crea <em>COP 508 M</em> de valor a 3 años, pero el dinero vuelve en el mes 67</h2>
+    <h2 class="ent" style="--d:.08s">La inversión de COP 148 M se recupera en <em>menos de 9 meses</em> de operación</h2>
     <div class="chartc card rv" data-step="0" style="--d:.2s;margin-top:36px">
-      <h3>Acumulado del proyecto <span>(M COP)</span>
-        <span class="lg"><span><i class="ln"></i>Valor económico</span><span><i class="ln caja"></i>Caja</span></span></h3>
-      <svg class="chart" viewBox="0 0 1298 312" width="1298" height="312" role="img"><rect class="band" x="66.0" y="16" width="83.0" height="238"/><line class="grid" x1="66" x2="1062" y1="244.1" y2="244.1"/><text class="ax" x="54" y="249.1" text-anchor="end">−500</text><line class="zero" x1="66" x2="1062" y1="194.5" y2="194.5"/><text class="ax" x="54" y="199.5" text-anchor="end">0</text><line class="grid" x1="66" x2="1062" y1="144.9" y2="144.9"/><text class="ax" x="54" y="149.9" text-anchor="end">500</text><line class="grid" x1="66" x2="1062" y1="95.3" y2="95.3"/><text class="ax" x="54" y="100.3" text-anchor="end">1.000</text><line class="grid" x1="66" x2="1062" y1="45.8" y2="45.8"/><text class="ax" x="54" y="50.8" text-anchor="end">1.500</text><text class="ax" x="66.0" y="278" text-anchor="middle">0</text><text class="ax" x="232.0" y="278" text-anchor="middle">12</text><text class="ax" x="398.0" y="278" text-anchor="middle">24</text><text class="ax" x="564.0" y="278" text-anchor="middle">36</text><text class="ax" x="730.0" y="278" text-anchor="middle">48</text><text class="ax" x="896.0" y="278" text-anchor="middle">60</text><text class="ax" x="1062.0" y="278" text-anchor="middle">72</text><text class="ax" x="1062" y="310" text-anchor="end">Meses desde el inicio del proyecto</text><path class="line draw" pathLength="1" style="--d:.3s" d="M66.0,194.5 L79.8,196.6 L93.7,198.8 L107.5,200.9 L121.3,203.1 L135.2,205.2 L149.0,207.4 L162.8,204.7 L176.7,201.9 L190.5,199.2 L204.3,196.5 L218.2,193.7 L232.0,191.0 L245.8,188.3 L259.7,185.6 L273.5,182.8 L287.3,180.1 L301.2,177.4 L315.0,174.6 L328.8,171.9 L342.7,169.2 L356.5,166.4 L370.3,163.7 L384.2,161.0 L398.0,158.2 L411.8,155.5 L425.7,152.8 L439.5,150.1 L453.3,147.3 L467.2,144.6 L481.0,141.9 L494.8,139.1 L508.7,136.4 L522.5,133.7 L536.3,130.9 L550.2,128.2 L564.0,125.5 L577.8,122.8 L591.7,120.0 L605.5,117.3 L619.3,114.6 L633.2,111.8 L647.0,109.1 L660.8,106.4 L674.7,103.6 L688.5,100.9 L702.3,98.2 L716.2,95.5 L730.0,92.7 L743.8,90.0 L757.7,87.3 L771.5,84.5 L785.3,81.8 L799.2,79.1 L813.0,76.3 L826.8,73.6 L840.7,70.9 L854.5,68.2 L868.3,65.4 L882.2,62.7 L896.0,60.0 L909.8,57.2 L923.7,54.5 L937.5,51.8 L951.3,49.0 L965.2,46.3 L979.0,43.6 L992.8,40.9 L1006.7,38.1 L1020.5,35.4 L1034.3,32.7 L1048.2,29.9 L1062.0,27.2"/><path class="line caja draw" pathLength="1" style="--d:.6s" d="M66.0,194.5 L79.8,196.6 L93.7,198.8 L107.5,200.9 L121.3,203.1 L135.2,205.2 L149.0,207.4 L162.8,210.0 L176.7,212.6 L190.5,215.0 L204.3,217.2 L218.2,219.4 L232.0,221.5 L245.8,223.4 L259.7,225.2 L273.5,226.9 L287.3,228.5 L301.2,230.0 L315.0,231.4 L328.8,232.7 L342.7,233.9 L356.5,234.9 L370.3,235.9 L384.2,236.8 L398.0,237.6 L411.8,238.2 L425.7,238.8 L439.5,239.3 L453.3,239.7 L467.2,240.0 L481.0,240.2 L494.8,240.3 L508.7,240.4 L522.5,240.3 L536.3,240.2 L550.2,239.9 L564.0,239.6 L577.8,239.3 L591.7,238.8 L605.5,238.2 L619.3,237.6 L633.2,236.9 L647.0,236.1 L660.8,235.2 L674.7,234.3 L688.5,233.3 L702.3,232.2 L716.2,231.1 L730.0,229.8 L743.8,228.5 L757.7,227.2 L771.5,225.7 L785.3,224.2 L799.2,222.7 L813.0,221.0 L826.8,219.3 L840.7,217.6 L854.5,215.7 L868.3,213.8 L882.2,211.9 L896.0,209.9 L909.8,207.8 L923.7,205.7 L937.5,203.5 L951.3,201.3 L965.2,199.0 L979.0,196.6 L992.8,194.2 L1006.7,191.7 L1020.5,189.2 L1034.3,186.6 L1048.2,184.0 L1062.0,181.3"/><circle class="node" style="--d:1.3s" cx="218.2" cy="194.5" r="8"><title>Equilibrio en valor: mes 11</title></circle><text class="val fadein hl halo" style="--d:1.5s" x="204.2" y="178.5" text-anchor="end">Valor: mes 11</text><circle class="node caja" style="--d:1.6s" cx="992.8" cy="194.5" r="8"><title>Equilibrio en caja: mes 67</title></circle><text class="val fadein halo" style="--d:1.8s" x="992.8" y="176.5" text-anchor="middle">Caja: mes 67</text><text class="val fadein hl" style="--d:1.7s" x="1076.0" y="33.2">Valor económico</text><text class="val fadein" style="--d:1.9s" x="1076.0" y="187.3">Caja</text></svg>
+      <h3>Beneficio acumulado menos inversión <span>(M COP, Random Forest con umbral de 0,5)</span></h3>
+      <svg class="chart" viewBox="0 0 1298 312" width="1298" height="312" role="img" aria-label="Beneficio acumulado menos inversión: empieza en menos 148 millones, cruza el cero en el mes 8,7 de operación y llega a 56 millones en el mes 12"><line class="grid" x1="66" x2="1062" y1="254.0" y2="254.0"/><line class="grid" x1="66" x2="1062" y1="206.4" y2="206.4"/><line class="grid" x1="66" x2="1062" y1="111.2" y2="111.2"/><line class="grid" x1="66" x2="1062" y1="63.6" y2="63.6"/><line class="grid" x1="66" x2="1062" y1="16.0" y2="16.0"/><text class="ax" x="54" y="259.0" text-anchor="end">−200</text><text class="ax" x="54" y="211.4" text-anchor="end">−100</text><text class="ax" x="54" y="163.8" text-anchor="end">0</text><text class="ax" x="54" y="116.2" text-anchor="end">100</text><text class="ax" x="54" y="68.6" text-anchor="end">200</text><text class="ax" x="54" y="21.0" text-anchor="end">300</text><text class="ax" x="66.0" y="280" text-anchor="middle">0</text><text class="ax" x="315.0" y="280" text-anchor="middle">6</text><text class="ax" x="564.0" y="280" text-anchor="middle">12</text><text class="ax" x="813.0" y="280" text-anchor="middle">18</text><text class="ax" x="1062.0" y="280" text-anchor="middle">24</text><text class="ax" x="1062" y="308" text-anchor="end">Meses de operación del modelo</text><path class="area bad" d="M66.0,158.8 L66.0,229.2 L426.6,158.8 Z"/><path class="area good" d="M426.6,158.8 L1062.0,34.8 L1062.0,158.8 Z"/><line class="axis" x1="66" x2="1062" y1="158.8" y2="158.8"/><path class="line draw" pathLength="1" style="--d:.3s" d="M66.0,229.2 L1062.0,34.8"/><text class="val fadein halo" style="--d:1.1s" x="80" y="255.2">−COP 148 M</text><circle class="node" style="--d:1.3s" cx="426.6" cy="158.8" r="7"><title>Se recupera la inversión: mes 8,7 de operación</title></circle><text class="val fadein hl halo" style="--d:1.5s" x="412.6" y="142.8" text-anchor="end">Recupera la inversión: mes 8,7</text><circle class="node" style="--d:1.6s" cx="564.0" cy="132.0" r="7"><title>Mes 12 de operación: ROI de 38%</title></circle><text class="val fadein hl halo" style="--d:1.8s" x="552.0" y="116.0" text-anchor="end">Mes 12: ROI de 38%</text><circle class="node" style="--d:1.9s" cx="1062.0" cy="34.8" r="7"><title>Mes 24: COP 260 M</title></circle><text class="val fadein" style="--d:1.9s" x="1080" y="40.8">COP 260 M</text></svg>
     </div>
     <div class="trio big rv" data-step="1">
-      <div><span>Inversión</span><b>COP 130 M</b>en 6 meses, más COP 50 M al año de operación</div>
-      <div><span>Equilibrio en valor económico</span><b>Mes 11</b>con un VPN a 3 años de COP 508 M</div>
-      <div><span>Equilibrio en caja</span><b>Mes 67</b>el margen de cada cliente llega en varios años</div>
+      <div><b>COP 148 M</b>cuesta implementar el modelo en 6 meses. Después, operarlo cuesta COP 50 M al año.</div>
+      <div><b>8,7 meses</b>tarda el banco en recuperar la inversión, porque el modelo deja COP 17,0 M de beneficio al mes.</div>
+      <div><b>38%</b>es el ROI a 12 meses. En el primer año, el banco recupera los COP 148 M y además gana COP 56 M.</div>
     </div>
   </div>
-  <div class="pg"><b>11</b> / 14</div>
+  <div class="pg"><b>6</b> / 9</div>
 </section>
 <section class="slide L">
   <div class="brand" role="img" aria-label="Universidad de los Andes"><i class="ulogo"></i></div>
   <div class="pad">
-    <div class="kicker ent">03 · El valor para el banco</div>
-    <h2 class="ent" style="--d:.08s">El modelo se paga en <em>86 de cada 100</em> escenarios; el riesgo está en la oferta, no en el modelo</h2>
+    <h2 class="ent" style="--d:.08s">El modelo se paga en su primer año, pero la oferta debe convencer a <em>más del 25,5%</em></h2>
     <div class="split">
       <div class="chartc card rv" data-step="0" style="--d:.2s">
-        <h3>VPN a 3 años al mover un supuesto <span>(M COP)</span>
-          <span class="lg"><span><i class="bad"></i>Valor desfavorable</span><span><i class="good"></i>Valor favorable</span></span></h3>
-        <svg class="chart" viewBox="0 0 852 420" width="852" height="420" role="img"><text class="cat" x="0" y="52.0">Efectividad de la oferta</text><line class="avg" x1="41.7" x2="41.7" y1="58.0" y2="92.0"/><rect class="bar bad growx r" style="--d:0.25s" x="48.2" y="62.0" width="261.8" height="26" rx="4"><title>Efectividad de la oferta en 15%: VPN COP 12 M</title></rect><rect class="bar good growx" style="--d:0.25s" x="310.0" y="62.0" width="415.3" height="26" rx="4"><title>Efectividad de la oferta en 48%: VPN COP 1.294 M</title></rect><text class="inbar fadein" style="--d:1.05s" x="58.2" y="80.0">15%</text><text class="ax fadein" style="--d:1.05s" x="735.2" y="80.0">48%</text><text class="cat" x="0" y="124.0">Costo por contacto</text><line class="avg" x1="41.7" x2="41.7" y1="130.0" y2="164.0"/><rect class="bar bad growx r" style="--d:0.37s" x="78.8" y="134.0" width="231.2" height="26" rx="4"><title>Costo por contacto en COP 115 mil: VPN COP 70 M</title></rect><rect class="bar good growx" style="--d:0.37s" x="310.0" y="134.0" width="205.3" height="26" rx="4"><title>Costo por contacto en COP 15 mil: VPN COP 896 M</title></rect><text class="inbar fadein" style="--d:1.17s" x="88.8" y="152.0">COP 115 mil</text><text class="ax fadein" style="--d:1.17s" x="525.3" y="152.0">COP 15 mil</text><text class="cat" x="0" y="196.0">Margen de contribución</text><line class="avg" x1="41.7" x2="41.7" y1="202.0" y2="236.0"/><rect class="bar bad growx r" style="--d:0.49s" x="153.7" y="206.0" width="156.3" height="26" rx="4"><title>Margen de contribución en 25%: VPN COP 212 M</title></rect><rect class="bar good growx" style="--d:0.49s" x="310.0" y="206.0" width="192.1" height="26" rx="4"><title>Margen de contribución en 45%: VPN COP 871 M</title></rect><text class="inbar fadein" style="--d:1.29s" x="163.7" y="224.0">25%</text><text class="ax fadein" style="--d:1.29s" x="512.1" y="224.0">45%</text><text class="cat" x="0" y="268.0">Ingreso anual por cliente</text><line class="avg" x1="41.7" x2="41.7" y1="274.0" y2="308.0"/><rect class="bar bad growx r" style="--d:0.61s" x="153.7" y="278.0" width="156.3" height="26" rx="4"><title>Ingreso anual por cliente en COP 500 mil: VPN COP 212 M</title></rect><rect class="bar good growx" style="--d:0.61s" x="310.0" y="278.0" width="192.1" height="26" rx="4"><title>Ingreso anual por cliente en COP 900 mil: VPN COP 871 M</title></rect><text class="inbar fadein" style="--d:1.41s" x="163.7" y="296.0">COP 500 mil</text><text class="ax fadein" style="--d:1.41s" x="512.1" y="296.0">COP 900 mil</text><text class="cat" x="0" y="340.0">Costo de implementación</text><line class="avg" x1="41.7" x2="41.7" y1="346.0" y2="380.0"/><rect class="bar bad growx r" style="--d:0.73s" x="173.5" y="350.0" width="136.5" height="26" rx="4"><title>Costo de implementación en COP 400 M: VPN COP 249 M</title></rect><rect class="bar good growx" style="--d:0.73s" x="310.0" y="350.0" width="48.0" height="26" rx="4"><title>Costo de implementación en COP 35 M: VPN COP 598 M</title></rect><text class="inbar fadein" style="--d:1.53s" x="183.5" y="368.0">COP 400 M</text><text class="ax fadein" style="--d:1.53s" x="367.9" y="368.0">COP 35 M</text><line class="base" x1="310.0" x2="310.0" y1="28" y2="398"/><text class="ax" x="310.0" y="20" text-anchor="middle">Caso base: COP 508 M</text><text class="ax" x="41.7" y="418" text-anchor="middle">VPN = 0</text></svg>
+        <h3>Recall frente a precisión <span>(conjunto de prueba, banco con 15% de churn)</span></h3>
+        <svg class="chart" viewBox="0 0 852 420" width="852" height="420" role="img" aria-label="Recall mínimo para recuperar la inversión en 12 meses según la precisión. Los dos modelos quedan por encima de la curva y contactar a todos queda por debajo de la precisión de equilibrio"><line class="grid" x1="70" x2="830" y1="282.5" y2="282.5"/><line class="grid" x1="70" x2="830" y1="195.0" y2="195.0"/><line class="grid" x1="70" x2="830" y1="107.5" y2="107.5"/><line class="grid" x1="70" x2="830" y1="20.0" y2="20.0"/><text class="ax" x="58" y="375.0" text-anchor="end">0%</text><text class="ax" x="58" y="287.5" text-anchor="end">25%</text><text class="ax" x="58" y="200.0" text-anchor="end">50%</text><text class="ax" x="58" y="112.5" text-anchor="end">75%</text><text class="ax" x="58" y="25.0" text-anchor="end">100%</text><text class="ax" x="70.0" y="396" text-anchor="middle">0%</text><text class="ax" x="222.0" y="396" text-anchor="middle">20%</text><text class="ax" x="374.0" y="396" text-anchor="middle">40%</text><text class="ax" x="526.0" y="396" text-anchor="middle">60%</text><text class="ax" x="678.0" y="396" text-anchor="middle">80%</text><text class="ax" x="830.0" y="396" text-anchor="middle">100%</text><text class="ax" x="830" y="418" text-anchor="end">Precisión en el banco</text><path class="area good" d="M283.5,20.0 L283.5,28.8 L287.3,40.9 L291.1,51.8 L294.9,61.7 L298.7,70.7 L302.5,78.9 L306.3,86.4 L310.1,93.3 L313.9,99.7 L317.7,105.6 L321.5,111.1 L325.3,116.3 L329.1,121.0 L332.9,125.5 L336.7,129.7 L340.5,133.6 L344.3,137.3 L348.1,140.8 L351.9,144.1 L355.7,147.3 L359.5,150.2 L363.3,153.0 L367.1,155.7 L370.9,158.3 L374.7,160.7 L378.5,163.0 L382.3,165.2 L386.1,167.3 L389.9,169.3 L393.7,171.2 L397.5,173.1 L401.3,174.9 L405.1,176.6 L408.9,178.2 L412.7,179.8 L416.5,181.3 L420.3,182.7 L424.1,184.1 L427.9,185.5 L431.7,186.8 L435.5,188.1 L439.3,189.3 L443.1,190.5 L446.9,191.6 L450.7,192.7 L454.5,193.8 L458.3,194.8 L462.1,195.8 L465.9,196.8 L469.7,197.7 L473.5,198.6 L477.3,199.5 L481.1,200.4 L484.9,201.2 L488.7,202.0 L492.5,202.8 L496.3,203.6 L500.1,204.4 L503.9,205.1 L507.7,205.8 L511.5,206.5 L515.3,207.2 L519.1,207.8 L522.9,208.5 L526.7,209.1 L530.5,209.7 L534.3,210.3 L538.1,210.9 L541.9,211.5 L545.7,212.0 L549.5,212.6 L553.3,213.1 L557.1,213.6 L560.9,214.2 L564.7,214.7 L568.5,215.1 L572.3,215.6 L576.1,216.1 L579.9,216.5 L583.7,217.0 L587.5,217.4 L591.3,217.9 L595.1,218.3 L598.9,218.7 L602.7,219.1 L606.5,219.5 L610.3,219.9 L614.1,220.3 L617.9,220.7 L621.7,221.0 L625.5,221.4 L629.3,221.7 L633.1,222.1 L636.9,222.4 L640.7,222.8 L644.5,223.1 L648.3,223.4 L652.1,223.7 L655.9,224.1 L659.7,224.4 L663.5,224.7 L667.3,225.0 L671.1,225.3 L674.9,225.5 L678.7,225.8 L682.5,226.1 L686.3,226.4 L690.1,226.6 L693.9,226.9 L697.7,227.2 L701.5,227.4 L705.3,227.7 L709.1,227.9 L712.9,228.2 L716.7,228.4 L720.5,228.7 L724.3,228.9 L728.1,229.1 L731.9,229.4 L735.7,229.6 L739.5,229.8 L743.3,230.0 L747.1,230.2 L750.9,230.4 L754.7,230.7 L758.5,230.9 L762.3,231.1 L766.1,231.3 L769.9,231.5 L773.7,231.7 L777.5,231.8 L781.3,232.0 L785.1,232.2 L788.9,232.4 L792.7,232.6 L796.5,232.8 L800.3,232.9 L804.1,233.1 L807.9,233.3 L811.7,233.5 L815.5,233.6 L819.3,233.8 L823.1,234.0 L826.9,234.1 L830.0,20.0 Z"/><text class="ax" x="678.0" y="83.0" text-anchor="middle">Se paga en 12 meses o menos</text><line class="avg" x1="214.8" x2="214.8" y1="20.0" y2="370.0"/><text class="ax" x="222.8" y="360.0">Precisión de equilibrio: 19%</text><line class="axis" x1="70" x2="830" y1="370.0" y2="370.0"/><path class="line draw" pathLength="1" style="--d:.3s" d="M283.5,28.8 L287.3,40.9 L291.1,51.8 L294.9,61.7 L298.7,70.7 L302.5,78.9 L306.3,86.4 L310.1,93.3 L313.9,99.7 L317.7,105.6 L321.5,111.1 L325.3,116.3 L329.1,121.0 L332.9,125.5 L336.7,129.7 L340.5,133.6 L344.3,137.3 L348.1,140.8 L351.9,144.1 L355.7,147.3 L359.5,150.2 L363.3,153.0 L367.1,155.7 L370.9,158.3 L374.7,160.7 L378.5,163.0 L382.3,165.2 L386.1,167.3 L389.9,169.3 L393.7,171.2 L397.5,173.1 L401.3,174.9 L405.1,176.6 L408.9,178.2 L412.7,179.8 L416.5,181.3 L420.3,182.7 L424.1,184.1 L427.9,185.5 L431.7,186.8 L435.5,188.1 L439.3,189.3 L443.1,190.5 L446.9,191.6 L450.7,192.7 L454.5,193.8 L458.3,194.8 L462.1,195.8 L465.9,196.8 L469.7,197.7 L473.5,198.6 L477.3,199.5 L481.1,200.4 L484.9,201.2 L488.7,202.0 L492.5,202.8 L496.3,203.6 L500.1,204.4 L503.9,205.1 L507.7,205.8 L511.5,206.5 L515.3,207.2 L519.1,207.8 L522.9,208.5 L526.7,209.1 L530.5,209.7 L534.3,210.3 L538.1,210.9 L541.9,211.5 L545.7,212.0 L549.5,212.6 L553.3,213.1 L557.1,213.6 L560.9,214.2 L564.7,214.7 L568.5,215.1 L572.3,215.6 L576.1,216.1 L579.9,216.5 L583.7,217.0 L587.5,217.4 L591.3,217.9 L595.1,218.3 L598.9,218.7 L602.7,219.1 L606.5,219.5 L610.3,219.9 L614.1,220.3 L617.9,220.7 L621.7,221.0 L625.5,221.4 L629.3,221.7 L633.1,222.1 L636.9,222.4 L640.7,222.8 L644.5,223.1 L648.3,223.4 L652.1,223.7 L655.9,224.1 L659.7,224.4 L663.5,224.7 L667.3,225.0 L671.1,225.3 L674.9,225.5 L678.7,225.8 L682.5,226.1 L686.3,226.4 L690.1,226.6 L693.9,226.9 L697.7,227.2 L701.5,227.4 L705.3,227.7 L709.1,227.9 L712.9,228.2 L716.7,228.4 L720.5,228.7 L724.3,228.9 L728.1,229.1 L731.9,229.4 L735.7,229.6 L739.5,229.8 L743.3,230.0 L747.1,230.2 L750.9,230.4 L754.7,230.7 L758.5,230.9 L762.3,231.1 L766.1,231.3 L769.9,231.5 L773.7,231.7 L777.5,231.8 L781.3,232.0 L785.1,232.2 L788.9,232.4 L792.7,232.6 L796.5,232.8 L800.3,232.9 L804.1,233.1 L807.9,233.3 L811.7,233.5 L815.5,233.6 L819.3,233.8 L823.1,234.0 L826.9,234.1"/><text class="ax fadein" style="--d:1.2s" x="826" y="260.1" text-anchor="end">Recall mínimo para pagarse en 12 meses</text><circle class="node todos" style="--d:1.30s" cx="184.0" cy="20.0" r="7"><title>Contactar a todos: precisión 15%, recall 100%</title></circle><circle class="node bad" style="--d:1.45s" cx="453.0" cy="153.3" r="7"><title>Gradient Boosting: precisión 50%, recall 62%</title></circle><circle class="node " style="--d:1.60s" cx="516.1" cy="161.1" r="7"><title>Random Forest: precisión 59%, recall 60%</title></circle><text class="val fadein halo" style="--d:1.50s" x="190.0" y="48.0" text-anchor="end">Contactar a todos</text><text class="val fadein halo" style="--d:1.65s" x="453.0" y="137.3" text-anchor="middle">Gradient Boosting</text><text class="val fadein halo hl" style="--d:1.80s" x="530.1" y="167.1">Random Forest</text></svg>
       </div>
       <div class="cond card hl rv" data-step="1">
-        <div class="big"><span data-count="86" data-dec="0">86</span>%</div>
-        <div class="bl">de 10.000 escenarios simulados tienen VPN positivo. En el 76%, además, supera a la mejor opción sin modelo.</div>
+        <div class="big"><span data-count="19" data-dec="0">19</span>%</div>
+        <div class="bl">de precisión basta para que cada contacto deje ganancia. El modelo tiene 59%, tres veces más.</div>
         <hr>
-        <div class="lb">El VPN sigue positivo mientras</div>
+        <div class="lb">El proyecto se paga en su primer año siempre que:</div>
         <ul class="fl">
-          <li>el banco tenga más de <b>6.047 clientes</b></li>
-          <li>cada contacto cueste menos de <b>COP 135.400</b></li>
-          <li>la oferta convenza a más del <b>14,6%</b></li>
+          <li>el recall sea mayor a <b>46,5%</b> (hoy es de 59,7%)</li>
+          <li>cada contacto cueste menos de <b>COP 58.457</b></li>
+          <li>la oferta convenza a más del <b>25,5%</b> de los clientes que se iban a ir</li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="pg"><b>12</b> / 14</div>
+  <div class="pg"><b>7</b> / 9</div>
 </section>
 <section class="slide L">
   <div class="brand" role="img" aria-label="Universidad de los Andes"><i class="ulogo"></i></div>
   <div class="pad">
-    <div class="kicker ent">03 · El valor para el banco</div>
-    <h2 class="ent" style="--d:.08s">Cuatro supuestos que hay que validar <em>antes de confiar</em> en las cifras</h2>
+    <h2 class="ent" style="--d:.08s">Recomendamos usar el modelo, pero antes hay que tener en cuenta <em>cuatro cosas</em></h2>
     <div class="pillars">
-      <div class="pillar card rv" data-step="0" style="--d:.25s"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/> <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/> <path d="M2 12h20"/></svg><h3>Datos europeos</h3>
-        <p>El modelo aprendió de clientes de Francia, Alemania y España, no de Colombia.</p></div>
-      <div class="pillar card rv" data-step="0" style="--d:.38s"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/> <circle cx="12" cy="12" r="6"/> <circle cx="12" cy="12" r="2"/></svg><h3>Riesgo no es persuasión</h3>
-        <p>Los clientes con más riesgo de irse no siempre son los que la oferta convence.</p></div>
-      <div class="pillar card rv" data-step="1" style="--d:0s"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"/> <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/> <path d="M12 17.5v-11"/></svg><h3>Supuestos con fuentes débiles</h3>
-        <p>El churn de 15% y varios costos son inciertos; por eso medimos la sensibilidad.</p></div>
-      <div class="pillar card rv" data-step="1" style="--d:.12s"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/> <path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/> <path d="M7 21h10"/> <path d="M12 3v18"/> <path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></svg><h3>Datos personales y equidad</h3>
-        <p>Se requiere autorización de los clientes (Ley 1581), y el modelo usa género y edad.</p></div>
+      <div class="pillar card rv" data-step="0" style="--d:.25s"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/> <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/> <path d="M2 12h20"/></svg><h3>El modelo aprendió con clientes europeos</h3>
+        <p>Los datos son de Francia, Alemania y España. Antes de usarlo, hay que reentrenarlo con datos de un banco colombiano.</p></div>
+      <div class="pillar card rv" data-step="0" style="--d:.38s"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/> <circle cx="12" cy="12" r="6"/> <circle cx="12" cy="12" r="2"/></svg><h3>No sabemos cuántos aceptan la oferta</h3>
+        <p>Supusimos que la oferta convence al 30% de los clientes que se iban a ir, pero eso no lo medimos. Si convence a menos del 25,5%, el modelo no alcanza a pagarse en un año.</p></div>
+      <div class="pillar card rv" data-step="1" style="--d:0s"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"/> <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/> <path d="M12 17.5v-11"/></svg><h3>Dos cifras salen de fuentes poco sólidas</h3>
+        <p>Son el 15% de churn y los COP 40.000 que cuesta cada contacto. Si cada contacto termina costando más de COP 58.457, el modelo ya no se paga en un año.</p></div>
+      <div class="pillar card rv" data-step="1" style="--d:.12s"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/> <path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/> <path d="M7 21h10"/> <path d="M12 3v18"/> <path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></svg><h3>El modelo usa datos personales</h3>
+        <p>El banco necesita la autorización de los clientes para usar sus datos (Ley 1581). Además, como el modelo usa el género y la edad, hay que revisar que la campaña no discrimine a ningún grupo.</p></div>
     </div>
   </div>
-  <div class="pg"><b>13</b> / 14</div>
+  <div class="pg"><b>8</b> / 9</div>
 </section>
 <section class="slide B">
   <div class="lockup ent"><i class="ulogo" role="img" aria-label="Universidad de los Andes"></i><span class="sep"></span><div class="dep"><b>Ingeniería de Sistemas y Computación</b><br>Escuela de Posgrado</div></div>
@@ -574,12 +490,11 @@ body.show-help #help{opacity:1}
     <div class="repo ent" style="--d:.3s"><svg class="gh" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 3.5c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 10.5c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>github.com/linamu24/CienciaDatosTaller2</div>
   </div>
   <div class="cl-card ent" style="--d:.25s">
-    <div class="lb">En resumen</div>
-    <div class="row"><b>COP 380 M</b><span>al año deja la campaña de retención dirigida por el modelo</span></div>
-    <div class="row"><b>COP 508 M</b><span>de VPN a 3 años; en caja, el dinero vuelve en el mes 67</span></div>
-    <div class="row"><b>86%</b><span>de 10.000 escenarios tienen VPN positivo; en el 76% supera a la mejor opción sin modelo</span></div>
+    <div class="row"><b>COP 254 M</b><span>al año gana el banco con la campaña que usa el modelo</span></div>
+    <div class="row"><b>38%</b><span>es el ROI a 12 meses, y la inversión se recupera en 8,7 meses de operación</span></div>
+    <div class="row"><b>59%</b><span>de precisión tiene el modelo, tres veces el 19% que necesita cada contacto para dejar ganancia</span></div>
   </div>
-  <div class="pg"><b>14</b> / 14</div>
+  <div class="pg"><b>9</b> / 9</div>
 </section>
 <div id="cnt"></div>
 <div id="bar"></div>
